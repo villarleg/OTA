@@ -15,10 +15,6 @@
                 id="changelog"
                 title="Changelog"
                 description="View Changelog">https://github.com/villarleg/OTA/blob/master/villarleg/CHANGELOG.mkdn</ChangelogUrl>
-            <OldBuildsUrl
-            	id="Old_builds"
-            	title="Build Folder"
-            	description="Build Download Archive">https://www.androidfilehost.com/?w=files&flid=182855</OldBuildsUrl>
 	</x720>
     </Stable>
 </SlimOTA>
