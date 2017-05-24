@@ -1,0 +1,86 @@
+▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
+
+
+ ▼ 05/23/2017
+
+
+ ▪ project external/DUtils/
+ ▪ 52668d8 Killapp action: restore home screen before killing the app
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/DUI/
+ ▪ 59a68e6 SmartBar editor: block quick popup when dragging the button
+
+ ▪ project packages/apps/Settings/
+ ▪ 46b451a Configurations:Add Some more Settings to Reset
+ ▪ 841d40b Avoid a NullPointerException in security
+ ▪ ad8e931 Optimized Code: call direct method to get integer extra
+ ▪ fef2b3d RejectedExecutionException  in DataUsageLIst
+ ▪ fb41cfd Optimize code on get UidDetail in AppDataUsage
+ ▪ e774dc4 Settings: Fix wrong wifi drawable in screen zooming preview
+ ▪ fab5b35 Avoid FC when entering Accessibility Settings with a font size of 100%
+ ▪ 4f798e7 DisplaySettings: font size in 5% steps from 80% to 130%
+ ▪ f6fe632 Correct fingerprint position during setup
+ ▪ f83f0cb PowerUsageFeatureProviderImpl: little cleanup
+ ▪ cdbcb1b Fix synchronization of Wi-Fi hotspot switch
+
+ ▪ project system/core/
+ ▪ 8f5e34c Merge branch 'cm-14.1' of https://github.com/LineageOS/android_system_core into nougat
+
+ ▪ project vendor/cmsdk/
+ ▪ af33af3 cmsdk: Add CMSettings option for QS auto brightness
+ ▪ 6bd7762 Protect system profiles related broadcasts
+
+ ▼ 05/22/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 3e04527c base: update updateUsbStateBroadcastIfNeeded types
+ ▪ fe1cfd9 Check and send usb state broadcast when devices boots
+ ▪ 7373362 Only send usb disconnect intents after boot.
+ ▪ ef0fcc2 fix KeyEvent can't correctly finish when inputmethod time out happened
+ ▪ 779a3e9 Fixed NPE in canAddMoreManagedProfiles
+ ▪ 60a339e Fix permissions for CTS [1/2]
+
+ ▪ project frameworks/native/
+ ▪ a0c6b9f Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
+
+ ▪ project packages/apps/Dialer/
+ ▪ afc79eb Dialer: lock screen appear before incoming call screen
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+ ▪ 1f45da1 Add Nougat maintainer Leeco LePro 3 (x720/x727) (#796)
+
+ ▪ project packages/services/OmniJaws/
+ ▪ c4e406d OwmniJaws Use own API key
+ ▪ 3d1c664 OmniJaws: fix OWM metric wind speed units
+ ▪ 299c137 OmniJaws: widget layout madness
+ ▪ 896d5fb OmniJaws: dont show OmniJaws error that prominent
+
+ ▪ project packages/services/ThemeInterfacer/
+ ▪ 2a46d48 Add interface to get API version and app authentication status
+ ▪ 8e55d57 Fix permissions for CTS [2/2]
+
+ ▼ 05/21/2017
+
+
+ ▪ project android/
+ ▪ 26c1bb4 manifest: track own ThemeInterfacer, and move to services
+
+ ▪ project frameworks/base/
+ ▪ a99c136 Merge remote-tracking branch 'remotes/rr/nougat' into HEAD
+ ▪ 81b97bf OMS: StrictMode and files under /data/system/theme/
+ ▪ 22d2286 Add protected broadcast for app crash broadcast
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/services/OmniJaws/
+
+ ▪ project vendor/cm/
+ ▪ 8b85edf cm: Remove root access prop
+
