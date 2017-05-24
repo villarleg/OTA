@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
-        <x720>
+        <zl1>
             <Filename>RR-N-v5.8.3-20170521-zl1-Official.zip</Filename>
             <RomUrl
                 id="rom"
@@ -15,6 +15,6 @@
                 id="changelog"
                 title="Changelog"
                 description="View Changelog">https://raw.githubusercontent.com/villarleg/OTA/master/villarleg/CHANGELOG.mkdn</ChangelogUrl>
-	</x720>
+	</zl1>
     </Stable>
 </SlimOTA>
