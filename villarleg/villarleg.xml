@@ -14,7 +14,7 @@
 	    <ChangelogUrl
                 id="changelog"
                 title="Changelog"
-                description="View Changelog">https://github.com/villarleg/OTA/blob/master/villarleg/CHANGELOG.mkdn</ChangelogUrl>
+                description="View Changelog">https://raw.githubusercontent.com/villarleg/OTA/master/villarleg/CHANGELOG.mkdn</ChangelogUrl>
 	</x720>
     </Stable>
 </SlimOTA>
