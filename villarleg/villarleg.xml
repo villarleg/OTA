@@ -11,14 +11,19 @@
                 id="open_gapps"
                 title="OpenGApps"
                 description="Download latest OpenGApps">http://opengapps.org</OpenGappsUrl>
-	    <ChangelogUrl
-                id="changelog"
-                title="Changelog"
-                description="View Changelog">https://raw.githubusercontent.com/villarleg/OTA/master/villarleg/CHANGELOG.mkdn</ChangelogUrl>
-                <RemoteUrl
+            <RemoteUrl
                 id="letv_remote"
                 title="LeTV Remote"
                 description="Remote Control">https://www.androidfilehost.com/?fid=889764386195901634</RemoteUrl>
+	        <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://raw.githubusercontent.com/villarleg/OTA/master/villarleg/CHANGELOG.mkdn</ChangelogUrl>
+	        <DonationUrl
+                id="donation"
+                title="Donation"
+                description="If you want to support this device">paypal.me/villarleg</DonationUrl>
+
 	</zl1>
     </Stable>
 </SlimOTA>
