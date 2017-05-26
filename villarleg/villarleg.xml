@@ -22,7 +22,7 @@
 	        <DonationUrl
                 id="donation"
                 title="Donation"
-                description="If you want to support this device">paypal.me/villarleg</DonationUrl>
+                description="If you want to support this device">https://www.paypal.me/villarleg</DonationUrl>
 
 	</zl1>
     </Stable>
