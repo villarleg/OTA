@@ -2,19 +2,15 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <zl1>
-            <Filename>RR-N-v5.8.3-20170526-zl1-Official.zip</Filename>
+            <Filename>RR-N-v5.8.3-20170527-zl1-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Latest ResurrectionRemix build">https://www.androidfilehost.com/?fid=961840155545567832</RomUrl>
+                description="Latest ResurrectionRemix build">https://www.androidfilehost.com/?fid=673368273298957878</RomUrl>
             <OpenGappsUrl
                 id="open_gapps"
                 title="OpenGApps"
                 description="Download latest OpenGApps">http://opengapps.org</OpenGappsUrl>
-            <RemoteUrl
-                id="letv_remote"
-                title="LeTV Remote"
-                description="Remote Control">https://www.androidfilehost.com/?fid=817550096634772075</RemoteUrl>
 	        <ChangelogUrl
                 id="changelog"
                 title="Changelog"
