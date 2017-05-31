@@ -1,8 +1,114 @@
-
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 05/30/2017
+
+
+ ▪ project external/stagefright-plugins/
+ ▪ 4089877 FFmpegExtractor: Don't use our extractor when we agree with StageFright
+
+ ▪ project frameworks/base/
+ ▪ 39b9d5b Recents: Ensure Lock icon animates only when Dismiss icon is visible
+ ▪ 8573690 Fix launch music player on headset connect on reboot
+ ▪ 7b24b49 Recents:Optional lock to task icon in recents task view header [1/2]
+ ▪ 3525359 Base:Add Lock task action to recents
+
+ ▪ project packages/apps/Jelly/
+ ▪ c35cc24 Jelly: Update android tools build
+ ▪ 020a697 Jelly: Don't accept cookies in incognito mode
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/apps/Snap/
+ ▪ f68cddc SnapdragonCamera: Fix torch mode with continuous shot
+ ▪ c737df5 Revert "Snap: CaptureModule: lock exposure also when precapture trigger is started"
+ ▪ 09a7a0b SnapdragonCamera: Camera2 force close after focused
+ ▪ 018fdd0 SnapdragonCamera: GPS location can't be turn On in camera settings
+ ▪ 26d9aec Fixed camera crash on exit
+
+ ▪ project vendor/cm/
+ ▪ 46fc541 typo fixed (#92)
+
+ ▼ 05/29/2017
+
+
+ ▪ project packages/apps/Email/
+ ▪ b76ada5 Fix check for deleted messages.
+ ▪ 70ccb25 Close body InputStreams correctly.
+
+ ▪ project packages/apps/Jelly/
+ ▪ dc48da6 Jelly: Don't add duplicates to the history
+ ▪ 78e3754 Jelly: Query an already ordered history
+ ▪ c8e5ebe Jelly: Enable the DOM storage API
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/apps/UnifiedEmail/
+ ▪ e353ae2 Properly close body InputStreams.
+
+ ▪ project vendor/cm/
+ ▪ a8b16ae Update pixel launcher
+
+ ▼ 05/28/2017
+
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Settings/
+ ▪ 5de955c ButtonBacklight: Preview timeout once user stops dragging
+ ▪ f30a1b4 Configurations: Update button backlight brightness in real time
+
+ ▼ 05/27/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 669850a base: notifications: DEFAULT_LIGHTS and FLAG_SHOW_LIGHTS must count as noisy
+ ▪ 307bfad Frameworks AppOps: Enable MODE_IGNORED for OP_WAKE_LOCK
+ ▪ c34f0fe CaptivePortal: login activity UI improvements
+ ▪ e947bf6 Fix an apk icon animation corruption issue
+ ▪ 21dd4e8 Fix crash by IllegalStateException in sendAccessibilityEvent
+ ▪ 13091e7 Clean up pending broadcast receivers when force stopping package
+ ▪ 018ff90 base: enable power save config of system apps [1/2]
+ ▪ 9df3a9e Fix memory leak in WifP2pManager
+ ▪ 1b42b5b Add QS pulldown with one swipe on fp sensor [1/2]
+ ▪ 1ca6a17 SystemUI: Misc fixes for right (custom) lockscreen shortcuts
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Jelly/
+ ▪ 64920b0 Jelly: Fix some warnings
+ ▪ 503fea1 Jelly: Use lambdas in settings activity
+ ▪ 576d1b9 Jelly: Make download_message not specific to sdcard
+
+ ▪ project packages/apps/Settings/
+ ▪ c018f90 QSPulldown: Remove FP gesture if device FP doesnt support it
+ ▪ 8be928a Settings:Optional lock to task icon in recents task header [2/2]
+ ▪ 2aa08c3 Settings: enable power save config of system apps [2/2]
+ ▪ a99ac4b Add QS pulldown with one swipe on fp sensor [2/2]
+
+ ▪ project packages/apps/Trebuchet/
+ ▪ 5c6b5a2 Add null check in Launcher onNewIntent() before moveToDefaultScreen().
+ ▪ 273db43 Handle OutOfMemoryException gracefully in WallpaperCropActivity.
+ ▪ 2846677 Fixing All apps not respecting scaled icon size
+ ▪ 14d0937 Adding workaround to jump in wallpaper offsets.
+
+ ▪ project packages/services/OmniJaws/
+
  ▼ 05/26/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Jelly/
+ ▪ 8f1365c Jelly: Handle screenLayout changes
+
+ ▪ project packages/apps/Settings/
+
+ ▼ 05/25/2017
 
 
  ▪ project frameworks/base/
@@ -10,7 +116,7 @@
  ▪ project packages/apps/Settings/
  ▪ b6ee806 Remove Z010D maintainer  ;( (#769)
 
- ▼ 05/25/2017
+ ▼ 05/24/2017
 
 
  ▪ project frameworks/base/
@@ -18,6 +124,7 @@
  ▪ project packages/apps/DUI/
 
  ▪ project packages/apps/Email/
+ ▪ c43715b Fix message duplication on flag update.
  ▪ c0e5d54 Search in folder specified via URI parameter, if possible.
 
  ▪ project packages/apps/Jelly/
@@ -33,137 +140,5 @@
  ▪ 5462df5 Pass selected folder to message search.
 
  ▪ project packages/services/OmniJaws/
-
- ▼ 05/24/2017
-
-
- ▪ project external/DUtils/
- ▪ 52668d8 Killapp action: restore home screen before killing the app
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/DUI/
- ▪ 59a68e6 SmartBar editor: block quick popup when dragging the button
-
- ▪ project packages/apps/Settings/
- ▪ 46b451a Configurations:Add Some more Settings to Reset
- ▪ 841d40b Avoid a NullPointerException in security
- ▪ ad8e931 Optimized Code: call direct method to get integer extra
- ▪ fef2b3d RejectedExecutionException  in DataUsageLIst
- ▪ fb41cfd Optimize code on get UidDetail in AppDataUsage
- ▪ e774dc4 Settings: Fix wrong wifi drawable in screen zooming preview
- ▪ fab5b35 Avoid FC when entering Accessibility Settings with a font size of 100%
- ▪ 4f798e7 DisplaySettings: font size in 5% steps from 80% to 130%
- ▪ f6fe632 Correct fingerprint position during setup
- ▪ f83f0cb PowerUsageFeatureProviderImpl: little cleanup
- ▪ cdbcb1b Fix synchronization of Wi-Fi hotspot switch
-
- ▪ project system/core/
- ▪ 8f5e34c Merge branch 'cm-14.1' of https://github.com/LineageOS/android_system_core into nougat
-
- ▪ project vendor/cmsdk/
- ▪ af33af3 cmsdk: Add CMSettings option for QS auto brightness
- ▪ 6bd7762 Protect system profiles related broadcasts
-
- ▼ 05/23/2017
-
-
- ▪ project frameworks/base/
- ▪ 3e04527c base: update updateUsbStateBroadcastIfNeeded types
- ▪ fe1cfd9 Check and send usb state broadcast when devices boots
- ▪ 7373362 Only send usb disconnect intents after boot.
- ▪ ef0fcc2 fix KeyEvent can't correctly finish when inputmethod time out happened
- ▪ 779a3e9 Fixed NPE in canAddMoreManagedProfiles
- ▪ 60a339e Fix permissions for CTS [1/2]
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/ResurrectionStats/
-
- ▪ project packages/apps/Settings/
-
- ▼ 05/22/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project frameworks/native/
- ▪ a0c6b9f Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
-
- ▪ project packages/apps/Dialer/
- ▪ afc79eb Dialer: lock screen appear before incoming call screen
-
- ▪ project packages/apps/Settings/
- ▪ 1f45da1 Add Nougat maintainer Leeco LePro 3 (x720/x727) (#796)
-
- ▪ project packages/services/OmniJaws/
- ▪ c4e406d OwmniJaws Use own API key
- ▪ 3d1c664 OmniJaws: fix OWM metric wind speed units
- ▪ 299c137 OmniJaws: widget layout madness
- ▪ 896d5fb OmniJaws: dont show OmniJaws error that prominent
-
- ▪ project packages/services/ThemeInterfacer/
- ▪ 2a46d48 Add interface to get API version and app authentication status
- ▪ 8e55d57 Fix permissions for CTS [2/2]
-
- ▼ 05/21/2017
-
-
- ▪ project android/
- ▪ 26c1bb4 manifest: track own ThemeInterfacer, and move to services
-
- ▪ project frameworks/base/
- ▪ a99c136 Merge remote-tracking branch 'remotes/rr/nougat' into HEAD
- ▪ 81b97bf OMS: StrictMode and files under /data/system/theme/
- ▪ 22d2286 Add protected broadcast for app crash broadcast
- ▪ 452eb37 Update Drawer header
- ▪ 185d71e Dont use CMSettings for Headset intents[1/2]
- ▪ c711fa3 Settings left drawer: make the view more compact and show more entries per page
- ▪ 6afb2ae Fix lag when opening an entry from the Settings left drawer
- ▪ 08ad038 Option to Show Custom header in settings drawer [1/2]
- ▪ 9efa551 Add SettingsDrawerActivity header
- ▪ eccc096 Fix the Wi-Fi wrong status when turning Wi-Fi on
- ▪ 759c96e Launch music player on headset connect: add BT compatibility [1/2]
- ▪ 313bf88 Add navigation disabled notification [1/2]
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Settings/
- ▪ 4fb4f6d Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into nougat
-
- ▪ project packages/services/OmniJaws/
-
- ▪ project vendor/cm/
- ▪ 8b85edf cm: Remove root access prop
-
- ▼ 05/20/2017
-
-
- ▪ project build/
- ▪ c698ef7 envsetup: fix small derp calling root method chooser script
- ▪ 1985266 Merge branch 'optional-root-method' into nougat
- ▪ 179e18c rr: show buildtype in dumpvar, call root method type chooser script
-
- ▪ project packages/apps/Jelly/
- ▪ 7c65684 Jelly: EditTextExt: Remove shader before drawing
- ▪ 0a0fcbd Jelly: Don't reload webview on screen rotation
-
- ▪ project packages/apps/PackageInstaller/
- ▪ 8829bce PackageInstaller: Show current & new version Forward ported to Marshmallow By: @dwitherell Forward ported to Nougat By: @BeansTown106
- ▪ 2f4fee0 Fix PackageInstaller FC when tapping on a downloaded apk notification 2
-
- ▪ project packages/apps/Settings/
- ▪ 397950c Fix expandable desktop
- ▪ 5af5556 Make sure to rebuild on app entries loaded
- ▪ beff6c3 Don't re-populate the app list in rebuild()
- ▪ 1a4cf52 Move Headset Settings out of CMSettings
- ▪ fa02ac3 Option to show Settings header in settings drawer[2/2]
- ▪ 9accf76 Launch music player on headset connect: add BT compatibility [2/2]
- ▪ bf8c859 Add J500Y (#795)
-
- ▪ project vendor/cm/
- ▪ 8ead5c5 Merge branch 'optional-root-method' into nougat
 
 
