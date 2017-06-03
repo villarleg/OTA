@@ -1,5 +1,168 @@
+
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
+
+ ▼ 06/03/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 8ff5e2e Recents:improve task locking code & mechanism
+ ▪ d0bf589 fw: Don't consume home key press when KEY_ACTION_SLEEP is used
+ ▪ cc8e5e6 SystemUI: Specify user while changing brightness mode
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Dialer/
+ ▪ ae7d2f6 Dialer: update fab color to match aosp primary color
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
+ ▪ 4012daa Mi Note 2 Maintainer Update (#797)
+
+ ▪ project packages/services/Telecomm/
+ ▪ 4ded59b (1/2) Make sensitive phone numbers not to be shown in call log history.
+
+ ▪ project packages/services/Telephony/
+ ▪ 8171340 Fix minor inconsistency in the CDMA call settings
+ ▪ 6c91d6c telephony: Fix and move CAF strings
+
+ ▪ project system/sepolicy/
+ ▪ 759e540 Add policy to fix interfacer derp on boot
+ ▪ 31468f5 Allow recovery to alter / on userdebug/eng builds
+
+ ▪ project vendor/cm/
+ ▪ 3b631c0 sensitive_pn: Add sensitive phone numbers for India
+ ▪ 6d364bf sensitive_pn: Add more numbers for Germany
+ ▪ bf099c9 sensitive_pn: Add sensitive phone numbers for Norway
+ ▪ 9f417a1 sensitive_pn: Add additional US numbers
+ ▪ 2f24950 sensitive_pn: add sensitive number for Indonesia
+ ▪ e0f17b9 sensitive_pn: Add sensitive phone number for Romania
+ ▪ cd6c6be sensitive_pn: Added sensitive number for the Netherlands
+ ▪ 3575664 sensitive_pn: add sensitive numbers for Turkey
+ ▪ 229f62f sensitive_pn: Add sensitive phone number for Bangladesh
+ ▪ 5630a4a sensitive_pn: Add US number
+ ▪ 269c86c Add sensitive phone numbers for Brazil
+ ▪ 3fbdf51 sensitive_pn: reorder by MCC code
+ ▪ 56658d2 sensitive_pn: Add Australian sensitive phone number.
+ ▪ 34d9d56 sensitive_pn: Add New Zealand sensitive numbers.
+ ▪ 7ce9ff5 (2/2) Make sensitive phone numbers not to be shown in call log history.
+ ▪ a3f80fd overlay: Enable Wi-Fi by default on first boot
+ ▪ b52ed87 Show full alarm info
+
+ ▪ project vendor/cmsdk/
+ ▪ 5c781da Double tap to sleep anywhere on lock screen [3/3]
+ ▪ 4fb9332 cmsdk: Disable Lockscreen Media Art [3/3]
+ ▪ 2f25936 cmsdk: fix twilight state not updating in live display auto mode
+
+ ▼ 06/02/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project hardware/qcom/audio-caf/msm8916/
+ ▪ ef3989b Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.18' into cm-14.1-caf-8916
+ ▪ 40d378a Revert "audio HAL: fix thread starvation"
+
+ ▪ project hardware/qcom/media-caf/msm8916/
+ ▪ d781d8f Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.18' into cm-14.1-caf-8916
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+
+ ▪ project vendor/qcom/opensource/cryptfs_hw/
+ ▪ da6e595 cryptfs_hw: Fix stack out of bound issue
+
+ ▼ 06/01/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 9916373 Fix nav bar showing always on the left when rotated to 270 degrees. Also, fix the order of the buttons so the back button always shows on the bottom
+
+ ▪ project hardware/qcom/fm/
+
+ ▪ project packages/apps/AudioFX/
+
+ ▪ project packages/apps/Bluetooth/
+
+ ▪ project packages/apps/Calendar/
+
+ ▪ project packages/apps/Camera2/
+
+ ▪ project packages/apps/CellBroadcastReceiver/
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/EmergencyInfo/
+
+ ▪ project packages/apps/FMRadio/
+
+ ▪ project packages/apps/Gallery2/
+
+ ▪ project packages/apps/Jelly/
+ ▪ 0106448 Jelly: Enable adjust bounds for incognito image
+
+ ▪ project packages/apps/ManagedProvisioning/
+
+ ▪ project packages/apps/OmniSwitch/
+ ▪ fab5e78 OmniSwitch: cleanup BitmapUtils
+ ▪ 0ad4cd0 OmniSwitch: fix crash on special app icon formats
+ ▪ e6e21ad OmniSwitch: shadow wars
+ ▪ 3de4c24 OmniSwitch: Launcher: refine assist activity check
+ ▪ 4ec4e60 OmnSwitch: enable update thumbs during swipe
+ ▪ 74acfe7 OmniSwitch: Launcher: check for existing assist activities
+
+ ▪ project packages/apps/Recorder/
+
+ ▪ project packages/apps/Settings/
+ ▪ 3b35f19 Settings: enable fast scroll for all app list views
+
+ ▪ project packages/apps/SetupWizard/
+
+ ▪ project packages/apps/Snap/
+
+ ▪ project packages/apps/Tag/
+
+ ▪ project packages/apps/Trebuchet/
+
+ ▪ project packages/apps/TvSettings/
+
+ ▪ project packages/inputmethods/LatinIME/
+
+ ▪ project packages/providers/WeatherProvider/
+
+ ▪ project packages/services/LiveLockScreenService/
+
+ ▼ 05/31/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Jelly/
+ ▪ c642120 Jelly: Never hide history view
+ ▪ ea83c6c Jelly: Use an observer to refresh the history view
+ ▪ 837ec77 Add an indicator icon for incognito mode.
+ ▪ c35cc24 Jelly: Update android tools build
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/apps/Snap/
+ ▪ f68cddc SnapdragonCamera: Fix torch mode with continuous shot
+ ▪ c737df5 Revert "Snap: CaptureModule: lock exposure also when precapture trigger is started"
+ ▪ 09a7a0b SnapdragonCamera: Camera2 force close after focused
+ ▪ 018fdd0 SnapdragonCamera: GPS location can't be turn On in camera settings
+
+ ▪ project packages/services/OmniJaws/
+
+ ▪ project vendor/cm/
+ ▪ 46fc541 typo fixed (#92)
 
  ▼ 05/30/2017
 
@@ -13,21 +176,28 @@
  ▪ 7b24b49 Recents:Optional lock to task icon in recents task view header [1/2]
  ▪ 3525359 Base:Add Lock task action to recents
 
+ ▪ project hardware/qcom/display-caf/msm8960/
+ ▪ d222af7 hwc: return correct color format string while layer dump
+
  ▪ project packages/apps/Jelly/
- ▪ c35cc24 Jelly: Update android tools build
  ▪ 020a697 Jelly: Don't accept cookies in incognito mode
+ ▪ dc48da6 Jelly: Don't add duplicates to the history
+ ▪ 78e3754 Jelly: Query an already ordered history
+ ▪ c8e5ebe Jelly: Enable the DOM storage API
 
  ▪ project packages/apps/Settings/
 
  ▪ project packages/apps/Snap/
- ▪ f68cddc SnapdragonCamera: Fix torch mode with continuous shot
- ▪ c737df5 Revert "Snap: CaptureModule: lock exposure also when precapture trigger is started"
- ▪ 09a7a0b SnapdragonCamera: Camera2 force close after focused
- ▪ 018fdd0 SnapdragonCamera: GPS location can't be turn On in camera settings
  ▪ 26d9aec Fixed camera crash on exit
 
+ ▪ project packages/apps/Stk/
+ ▪ f9f50a5 Do not display toast if alpha text is null.
+
+ ▪ project packages/apps/Trebuchet/
+ ▪ 1a65ab8 Trebuchet: Sign with platform key
+
  ▪ project vendor/cm/
- ▪ 46fc541 typo fixed (#92)
+ ▪ a8b16ae Update pixel launcher
 
  ▼ 05/29/2017
 
@@ -36,18 +206,10 @@
  ▪ b76ada5 Fix check for deleted messages.
  ▪ 70ccb25 Close body InputStreams correctly.
 
- ▪ project packages/apps/Jelly/
- ▪ dc48da6 Jelly: Don't add duplicates to the history
- ▪ 78e3754 Jelly: Query an already ordered history
- ▪ c8e5ebe Jelly: Enable the DOM storage API
-
  ▪ project packages/apps/Settings/
 
  ▪ project packages/apps/UnifiedEmail/
  ▪ e353ae2 Properly close body InputStreams.
-
- ▪ project vendor/cm/
- ▪ a8b16ae Update pixel launcher
 
  ▼ 05/28/2017
 
@@ -56,89 +218,12 @@
 
  ▪ project packages/apps/Dialer/
 
- ▪ project packages/apps/Settings/
- ▪ 5de955c ButtonBacklight: Preview timeout once user stops dragging
- ▪ f30a1b4 Configurations: Update button backlight brightness in real time
-
- ▼ 05/27/2017
-
-
- ▪ project frameworks/base/
- ▪ 669850a base: notifications: DEFAULT_LIGHTS and FLAG_SHOW_LIGHTS must count as noisy
- ▪ 307bfad Frameworks AppOps: Enable MODE_IGNORED for OP_WAKE_LOCK
- ▪ c34f0fe CaptivePortal: login activity UI improvements
- ▪ e947bf6 Fix an apk icon animation corruption issue
- ▪ 21dd4e8 Fix crash by IllegalStateException in sendAccessibilityEvent
- ▪ 13091e7 Clean up pending broadcast receivers when force stopping package
- ▪ 018ff90 base: enable power save config of system apps [1/2]
- ▪ 9df3a9e Fix memory leak in WifP2pManager
- ▪ 1b42b5b Add QS pulldown with one swipe on fp sensor [1/2]
- ▪ 1ca6a17 SystemUI: Misc fixes for right (custom) lockscreen shortcuts
-
- ▪ project packages/apps/DUI/
-
  ▪ project packages/apps/Jelly/
  ▪ 64920b0 Jelly: Fix some warnings
  ▪ 503fea1 Jelly: Use lambdas in settings activity
  ▪ 576d1b9 Jelly: Make download_message not specific to sdcard
 
  ▪ project packages/apps/Settings/
- ▪ c018f90 QSPulldown: Remove FP gesture if device FP doesnt support it
- ▪ 8be928a Settings:Optional lock to task icon in recents task header [2/2]
- ▪ 2aa08c3 Settings: enable power save config of system apps [2/2]
- ▪ a99ac4b Add QS pulldown with one swipe on fp sensor [2/2]
-
- ▪ project packages/apps/Trebuchet/
- ▪ 5c6b5a2 Add null check in Launcher onNewIntent() before moveToDefaultScreen().
- ▪ 273db43 Handle OutOfMemoryException gracefully in WallpaperCropActivity.
- ▪ 2846677 Fixing All apps not respecting scaled icon size
- ▪ 14d0937 Adding workaround to jump in wallpaper offsets.
-
- ▪ project packages/services/OmniJaws/
-
- ▼ 05/26/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Jelly/
- ▪ 8f1365c Jelly: Handle screenLayout changes
-
- ▪ project packages/apps/Settings/
-
- ▼ 05/25/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/Settings/
- ▪ b6ee806 Remove Z010D maintainer  ;( (#769)
-
- ▼ 05/24/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Email/
- ▪ c43715b Fix message duplication on flag update.
- ▪ c0e5d54 Search in folder specified via URI parameter, if possible.
-
- ▪ project packages/apps/Jelly/
- ▪ c9f336c Jelly: Pause WebView along with the activity
- ▪ c23c013 Jelly: Don't claim to be a simple WebView
- ▪ c218521 Jelly: Define base class for Activities containing WebViewExt
- ▪ 1607c0d Jelly: Make it easier to initiate gestures
- ▪ 978e74e Jelly: Don't leak fileoutputstream if bm is null
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/apps/UnifiedEmail/
- ▪ 5462df5 Pass selected folder to message search.
-
- ▪ project packages/services/OmniJaws/
-
+ ▪ 5de955c ButtonBacklight: Preview timeout once user stops dragging
+ ▪ f30a1b4 Configurations: Update button backlight brightness in real time
 
