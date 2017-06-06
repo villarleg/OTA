@@ -1,16 +1,102 @@
+▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
- ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
+ ▼ 06/06/2017
+
+
+ ▪ project android/
+ ▪ bcb3fb7 crowdin: add PackageInstaller
+
+ ▪ project external/stagefright-plugins/
+ ▪ 05bf4e7 ffmpeg-extractor: StageFright supports Opus files
+ ▪ 11bc5a2 Revert "FFmpegExtractor: Don't use our extractor when we agree with StageFright"
+
+ ▪ project frameworks/base/
+ ▪ 0a001c5 Fix SystemUI FC due to Google Assistant
+ ▪ 16a622d Handle Illegal Argument Exception
+ ▪ 50b3778 Reduce MTU Size
+ ▪ fc52d47 FW_BASE: Rewrite restart SystemUI method
+ ▪ 42fa816 Add support for page theme color to WebView and WebChromeClient.
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Gallery2/
+ ▪ 95cb32b Increase the size of the tiles when decoding images
+
+ ▪ project packages/apps/Jelly/
+ ▪ e28fd6c Jelly: Add HTTP auth login support
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/ResurrectionOTA/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+ ▪ 5910d21 Settings:Rewrite Restart SystemUI
+
+ ▪ project packages/services/OmniJaws/
+
+ ▪ project vendor/cm/
+ ▪ 69d6029 fix check_blacklist function to work on wiped /system partition
+ ▪ d0be161 sensitive_pn: Add sensitive numbers for Serbia
+
+ ▼ 06/05/2017
+
+
+ ▪ project hardware/qcom/display-caf/msm8996/
+ ▪ 92fa2ea Merge tag 'LA.UM.5.5.r1-04700-8x96.0' into HEAD
+
+ ▪ project packages/apps/AudioFX/
+ ▪ 6850778 AudioFX: Sign with platform key
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Jelly/
+ ▪ 7ac5399 Add support for WebViews that provide the site's theme color.
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/ResurrectionOTA/
+
+ ▪ project packages/apps/Settings/
+ ▪ 4031811 Correction (#802)
+ ▪ 3cc6e83 Add Galaxy S4 Mini as Official (#799)
+
+ ▼ 06/04/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
 
  ▼ 06/03/2017
 
+
+ ▪ project external/chromium-webview/
+ ▪ 6613943 Update README
 
  ▪ project frameworks/base/
  ▪ 8ff5e2e Recents:improve task locking code & mechanism
  ▪ d0bf589 fw: Don't consume home key press when KEY_ACTION_SLEEP is used
  ▪ cc8e5e6 SystemUI: Specify user while changing brightness mode
 
- ▪ project packages/apps/DUI/
+ ▪ project hardware/qcom/audio-caf/msm8916/
+ ▪ ef3989b Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.18' into cm-14.1-caf-8916
+ ▪ 40d378a Revert "audio HAL: fix thread starvation"
+
+ ▪ project hardware/qcom/media-caf/msm8916/
+ ▪ d781d8f Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.18' into cm-14.1-caf-8916
 
  ▪ project packages/apps/Dialer/
  ▪ ae7d2f6 Dialer: update fab color to match aosp primary color
@@ -59,27 +145,6 @@
 
 
  ▪ project frameworks/base/
-
- ▪ project hardware/qcom/audio-caf/msm8916/
- ▪ ef3989b Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.18' into cm-14.1-caf-8916
- ▪ 40d378a Revert "audio HAL: fix thread starvation"
-
- ▪ project hardware/qcom/media-caf/msm8916/
- ▪ d781d8f Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.18' into cm-14.1-caf-8916
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-
- ▪ project vendor/qcom/opensource/cryptfs_hw/
- ▪ da6e595 cryptfs_hw: Fix stack out of bound issue
-
- ▼ 06/01/2017
-
-
- ▪ project frameworks/base/
  ▪ 9916373 Fix nav bar showing always on the left when rotated to 270 degrees. Also, fix the order of the buttons so the back button always shows on the bottom
 
  ▪ project hardware/qcom/fm/
@@ -103,17 +168,10 @@
  ▪ project packages/apps/Gallery2/
 
  ▪ project packages/apps/Jelly/
- ▪ 0106448 Jelly: Enable adjust bounds for incognito image
 
  ▪ project packages/apps/ManagedProvisioning/
 
  ▪ project packages/apps/OmniSwitch/
- ▪ fab5e78 OmniSwitch: cleanup BitmapUtils
- ▪ 0ad4cd0 OmniSwitch: fix crash on special app icon formats
- ▪ e6e21ad OmniSwitch: shadow wars
- ▪ 3de4c24 OmniSwitch: Launcher: refine assist activity check
- ▪ 4ec4e60 OmnSwitch: enable update thumbs during swipe
- ▪ 74acfe7 OmniSwitch: Launcher: check for existing assist activities
 
  ▪ project packages/apps/Recorder/
 
@@ -136,7 +194,12 @@
 
  ▪ project packages/services/LiveLockScreenService/
 
- ▼ 05/31/2017
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+
+ ▪ project vendor/qcom/opensource/cryptfs_hw/
+ ▪ da6e595 cryptfs_hw: Fix stack out of bound issue
+
+ ▼ 06/01/2017
 
 
  ▪ project frameworks/base/
@@ -144,27 +207,26 @@
  ▪ project packages/apps/DUI/
 
  ▪ project packages/apps/Jelly/
+ ▪ 0106448 Jelly: Enable adjust bounds for incognito image
  ▪ c642120 Jelly: Never hide history view
  ▪ ea83c6c Jelly: Use an observer to refresh the history view
  ▪ 837ec77 Add an indicator icon for incognito mode.
- ▪ c35cc24 Jelly: Update android tools build
+
+ ▪ project packages/apps/OmniSwitch/
+ ▪ fab5e78 OmniSwitch: cleanup BitmapUtils
+ ▪ 0ad4cd0 OmniSwitch: fix crash on special app icon formats
+ ▪ e6e21ad OmniSwitch: shadow wars
+ ▪ 3de4c24 OmniSwitch: Launcher: refine assist activity check
+ ▪ 4ec4e60 OmnSwitch: enable update thumbs during swipe
+ ▪ 74acfe7 OmniSwitch: Launcher: check for existing assist activities
 
  ▪ project packages/apps/ResurrectionStats/
 
  ▪ project packages/apps/Settings/
 
- ▪ project packages/apps/Snap/
- ▪ f68cddc SnapdragonCamera: Fix torch mode with continuous shot
- ▪ c737df5 Revert "Snap: CaptureModule: lock exposure also when precapture trigger is started"
- ▪ 09a7a0b SnapdragonCamera: Camera2 force close after focused
- ▪ 018fdd0 SnapdragonCamera: GPS location can't be turn On in camera settings
-
  ▪ project packages/services/OmniJaws/
 
- ▪ project vendor/cm/
- ▪ 46fc541 typo fixed (#92)
-
- ▼ 05/30/2017
+ ▼ 05/31/2017
 
 
  ▪ project external/stagefright-plugins/
@@ -180,50 +242,17 @@
  ▪ d222af7 hwc: return correct color format string while layer dump
 
  ▪ project packages/apps/Jelly/
+ ▪ c35cc24 Jelly: Update android tools build
  ▪ 020a697 Jelly: Don't accept cookies in incognito mode
- ▪ dc48da6 Jelly: Don't add duplicates to the history
- ▪ 78e3754 Jelly: Query an already ordered history
- ▪ c8e5ebe Jelly: Enable the DOM storage API
 
  ▪ project packages/apps/Settings/
 
  ▪ project packages/apps/Snap/
- ▪ 26d9aec Fixed camera crash on exit
-
- ▪ project packages/apps/Stk/
- ▪ f9f50a5 Do not display toast if alpha text is null.
-
- ▪ project packages/apps/Trebuchet/
- ▪ 1a65ab8 Trebuchet: Sign with platform key
+ ▪ f68cddc SnapdragonCamera: Fix torch mode with continuous shot
+ ▪ c737df5 Revert "Snap: CaptureModule: lock exposure also when precapture trigger is started"
+ ▪ 09a7a0b SnapdragonCamera: Camera2 force close after focused
+ ▪ 018fdd0 SnapdragonCamera: GPS location can't be turn On in camera settings
 
  ▪ project vendor/cm/
- ▪ a8b16ae Update pixel launcher
-
- ▼ 05/29/2017
-
-
- ▪ project packages/apps/Email/
- ▪ b76ada5 Fix check for deleted messages.
- ▪ 70ccb25 Close body InputStreams correctly.
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/apps/UnifiedEmail/
- ▪ e353ae2 Properly close body InputStreams.
-
- ▼ 05/28/2017
-
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Jelly/
- ▪ 64920b0 Jelly: Fix some warnings
- ▪ 503fea1 Jelly: Use lambdas in settings activity
- ▪ 576d1b9 Jelly: Make download_message not specific to sdcard
-
- ▪ project packages/apps/Settings/
- ▪ 5de955c ButtonBacklight: Preview timeout once user stops dragging
- ▪ f30a1b4 Configurations: Update button backlight brightness in real time
+ ▪ 46fc541 typo fixed (#92)
 
