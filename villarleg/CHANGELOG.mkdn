@@ -1,270 +1,273 @@
 
- ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
+ ▼ Resurrection Remix Nougat Ver 5.8.4 Changelog
 
 
-▼ 07/12/2017
+ ▼ 08/15/2017
 
-
- ▪ project frameworks/base/
- ▪ b0a68f3 PowerManagerService:Allow Device to set default value for hw keys light up[1/2]
 
  ▪ project packages/apps/Settings/
- ▪ e79d383 Settings:Allow Device to set default value for hw keys light up[2/2]
+ ▪ 7d771ca324 Fix i9500 maintainer dont show (#842)
+ ▪ df1f26ec20 Fix i9500 maintainer dont show (#840)
+ ▪ 72deb1296d Fix land device position (#839)
+ ▪ f6cc7a7c19 Add Redmi 4X device maintainer (#838)
 
- ▼ 07/11/2017
+ ▼ 08/14/2017
 
 
  ▪ project frameworks/base/
- ▪ f1c724e Base: make button backlight light up user configurable [1/2]
- ▪ 2a7f84f Fix a crashed when clicking list item and button meanwhile
- ▪ c2d809b Camera2: Fix Error Callback if buffer lost.
- ▪ fb62603 [ams]set the resultTo to null started by a finishing activity
- ▪ 5b8f52d remove the lock-use for prunePrintService in case blocking main thread
- ▪ 0246757 Move screen on message to new thread
- ▪ 6d688cd FlashlightTile: Retry opening camera later on if it failed before
- ▪ 6bcd55e hwui: Remove deprecated compiler flag
- ▪ 6d2489c SystemUI: move time tick to bg handler
 
  ▪ project packages/apps/DUI/
- ▪ 5198175 DUI:Smartbar longpress delay:make it more configurable [1/2]
-
- ▪ project packages/apps/Settings/
- ▪ fbdd17e Settings: make hw keys light up user configurable [2/2]
- ▪ 8ffe089 Smartbar longpress delay:make it more configurable [2/2]
-
- ▪ project vendor/cm/
- ▪ 3fa356a Magisk,Manager: update to v13.1 stable
-
- ▼ 07/10/2017
-
-
- ▪ project bionic/
- ▪ d207f78 Merge tag 'android-7.1.2_r24' into cm-14.1
-
- ▼ 07/09/2017
-
-
- ▪ project frameworks/base/
 
  ▪ project packages/apps/OmniSwitch/
 
- ▪ project packages/apps/Settings/
-
  ▪ project packages/services/OmniJaws/
 
- ▼ 07/08/2017
+ ▼ 08/13/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 63df1f1fdea PowerManagerService: fix HW button illumination timeout
+ ▪ 87a1af4ddbb SystemUI: Fix battery meter view blacklist handling
+
+ ▪ project hardware/broadcom/wlan/
+ ▪ 5ef057d Merge tag 'android-7.1.2_r28' into cm-14.1
+
+ ▪ project packages/apps/Snap/
+ ▪ 70dbc05d0 Snap: add missing null check on isCamera2Supported
+
+ ▼ 08/12/2017
+
+
+ ▪ project hardware/qcom/bt-caf/
+ ▪ b60954a libbt-qcom: Allow reading BT address from property
+
+ ▪ project packages/services/Telephony/
+ ▪ 3933dacc VoicemailSettingsActivity: Fix some NPEs
+ ▪ f824b46d Telephony: Correct missing italian translation
+ ▪ 2c3c9b07 PhoneToggler: Update preferred network mode setting
+
+ ▼ 08/11/2017
+
+
+ ▪ project packages/apps/Settings/
+ ▪ 6a459f6d3d Edit Moto G4 Plus Maintainer name (added full name) (#836)
+ ▪ 37c5cff879 Add maintainer for Xiaomi RedMi 3s (#835)
+
+ ▼ 08/10/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 558ad5d39a7 FWB:Single tap tile add switch [1/2]
+ ▪ ced649479c5 Allow user to add/remove QS with one click
+ ▪ 9059f7a6364 Merge pull request #206 from ashoksoni/dataswitch
+ ▪ e5d459fd918 Drop-down data switch through Cellular tile.
+ ▪ db1dea31f16 SystemUI: add telephony-ext so that imports can be resolved
+
+ ▪ project packages/apps/Jelly/
+ ▪ d76965a Jelly: Improve incognito mode privacy
+ ▪ 6767c48 Jelly: Enable more HTML5 features
+ ▪ 2e53eb0 Jelly: Don't crash on non-http downloads
+ ▪ 3347ed4 Jelly: Avoid Url bar interraction when focused
+ ▪ f67c692 Jelly: The app should not close when search is active and back-button is pressed.
+
+ ▪ project packages/apps/Settings/
+ ▪ fabd9ef5ef Settings:Single tap tile add switch [2/2]
+ ▪ 0afef7a60e Settings:remove Selinux Switch
+
+ ▼ 08/09/2017
 
 
  ▪ project android/
- ▪ 61a497f manifest: don't track themeengine related repos
- ▪ dafbf6a rr: don't track MusicFX
-
- ▪ project build/
- ▪ 75e05d5 core: Makefile: Correct package signature disable
- ▪ 72cd3b1 core: assume non-release recoveries to skip signature check
- ▪ b101356 core: use 0 compression when creating the target_files package
- ▪ 912e52a releasetools: silence binary info printed by blockimgdiff
- ▪ 189d8fd Create 0 compression ratio jar files
+ ▪ ed7d67a cm.xml: sync caf 8998 hals
 
  ▪ project frameworks/base/
- ▪ 79e9a27 aapt: enforce 0 compression
- ▪ 2ca4ef8 aapt: allow opting out of uncompressed aapt
- ▪ f6ef9b2 aapt: default to 0 compression
- ▪ 6c9941d PowerManagerService: add a config to light up buttons only when pressed
+ ▪ 198fc030557 DUI: Left in landscape navbar API [1/3]
 
  ▪ project packages/apps/AudioFX/
 
+ ▪ project packages/apps/Bluetooth/
+
+ ▪ project packages/apps/CMBugReport/
+
+ ▪ project packages/apps/Calendar/
+
+ ▪ project packages/apps/Camera2/
+
+ ▪ project packages/apps/CarrierConfig/
+ ▪ ea0ad38 Fix up incorrect domestic roaming and non-roaming cases
+
+ ▪ project packages/apps/CellBroadcastReceiver/
+
+ ▪ project packages/apps/DUI/
+ ▪ 84de443 Fling logo on pulse: add transparency instead of hiding it
+ ▪ f8f8b22 Fling: if KB is showing, double tap right/left to move text cursor
+ ▪ ac4d117 DUI: Left in landscape navbar API [3/3]
+ ▪ ab65f5a Revert "Pulse: Navbar left in landscape support" [2/3]
+ ▪ 009b591 Revert "DUI:Uncomment Navbar Left in Landscape [1/2]"
+
  ▪ project packages/apps/Gallery2/
 
  ▪ project packages/apps/Jelly/
 
- ▪ project packages/apps/SetupWizard/
+ ▪ project packages/apps/Settings/
+ ▪ d2d91c94e0 Updated Hydrogen Maintainer (#834)
+ ▪ b739eecca8 Add galaxy s4 i9500 maintainer (#833)
+
+ ▪ project packages/apps/Snap/
 
  ▪ project packages/apps/Terminal/
 
- ▪ project packages/providers/WeatherProvider/
+ ▪ project packages/apps/UnifiedEmail/
 
- ▪ project vendor/cm/
- ▪ fbb261c sensitive_pn: Enter full list of Indian MCC codes
- ▪ a736075 sensitive_pn: Enter full list of GB MCC codes
- ▪ 8388b24 sensitive_pn: Enter full list of US MCC codes
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-
- ▼ 07/07/2017
-
-
- ▪ project build/
- ▪ 5bd5c1f Don't build MusicFX
-
- ▪ project frameworks/base/
- ▪ 7359783 SmartBar: make button longpress delay configurable [2/3]
- ▪ 0f18cce fingerprint: Speed up wake-and-unlock scenario
- ▪ 10484a5 [1/2] Add support for pulsing battery icon when charging
-
- ▪ project packages/apps/DUI/
- ▪ 0e7263f SmartBar: make button longpress delay configurable [1/3]
-
- ▪ project packages/apps/Settings/
- ▪ 1f19428 SmartBar: make button longpress delay configurable [3/3]
- ▪ a9a780d Edit a string
- ▪ a9bba60 [2/2] Add support for pulsing battery icon regardless of style
-
- ▼ 07/06/2017
+ ▼ 08/08/2017
 
 
  ▪ project android/
- ▪ 095f157 manifest: android-7.1.2_r17 -> android-7.1.2_r24
+ ▪ 59201a1 manifest: android-7.1.2_r24 -> android-7.1.2_r29
 
  ▪ project build/
- ▪ 01f92d6 Merge tag 'android-7.1.2_r24' into nougat
-
- ▪ project external/boringssl/
- ▪ c9d9e0b Merge tag 'android-7.1.2_r24' into cm-14.1
+ ▪ 401a4a14d Merge 7.1.2_r29 into nougat
 
  ▪ project external/skia/
- ▪ d41b284 Merge tag 'android-7.1.2_r24' into nougat
+ ▪ 08bdeaf8e Merge 7.1.2_r29 into nougat
 
  ▪ project frameworks/av/
- ▪ 4d87ec3 Merge tag 'android-7.1.2_r24' into nougat
+ ▪ 3a63a174d Merge 7.1.2_r29 into nougat
 
  ▪ project frameworks/base/
- ▪ 7cc34a0 Merge tag 'android-7.1.2_r24' into nougat
+ ▪ e56d6464a46 FWB: Sensor block per-package switch (1/2)
+ ▪ a8e139f3170 SystemSensorManager: sensor block per-package
+ ▪ 59666009fef base: Update flags for edge gesture service from AOSPA
+ ▪ 5029476e9c0 Silence a memory leak warning from the static analyzer
+ ▪ 88fd564b800 GC in heapDumpFinished to cleanup hprof fd
+ ▪ 9b11fe26954 Add null check for Wi-Fi command
+ ▪ 9b8df668cd7 Fix static analyzer complaints
+ ▪ 3a939a667db Merge 7.1.2_r29 into nougat
 
  ▪ project frameworks/native/
- ▪ cfac6d5 Merge tag 'android-7.1.2_r24' into nougat
+ ▪ f298a32a5 Merge 7.1.2_r29 into nougat
 
- ▪ project libcore/
- ▪ 30ff118 Merge tag 'android-7.1.2_r24' into cm-14.1
-
- ▪ project packages/apps/Settings/
- ▪ 15be728 DeviceInfoSettings: don't hardcode tag/build id
- ▪ 658c831 Merge tag 'android-7.1.2_r24' into nougat
- ▪ 77bc9ec Change Oneplus2 maintainer (#816)
-
- ▪ project packages/providers/DownloadProvider/
- ▪ d20a3a2 Merge tag 'android-7.1.2_r24' into cm-14.1
-
- ▪ project packages/providers/MediaProvider/
- ▪ 03abed5 Merge tag 'android-7.1.2_r24' into cm-14.1
-
- ▪ project system/sepolicy/
- ▪ ca57649 Add policy to fix interfacer derp on boot
- ▪ f0546f1 sepolicy: Allow system_server to set theme_prop
- ▪ 188e2fb sepolicy: add file and domain trans to interfacer
- ▪ bb79e15 Rename Masquerade to ThemeInterfacer [2/2]
- ▪ e9e8cf5 sepolicy: Redo masquerade rules
- ▪ 3ce5f05  sepolicy: Attempt to fix bootanim
- ▪ 61f8622 sepolicy: allow masquerade to read and write theme assets
- ▪ e394d92 sepolicy: rename masquerade domain and allow JobService in system_server
- ▪ 36c882b initial policy edits for masquerade to operate rootless
- ▪ 4eb146b Revert "Revert "sepolicy: fix themed sounds""
- ▪ d7a63a4 Revert "Revert "sepolicy: fix themed boot animation""
- ▪ ba0e461 Revert "Revert "Introduce sepolicy exceptions for theme assets""
- ▪ 8384671 Revert "Revert "Allow apps in /system/priv-app to call and execute su commands""
- ▪ 48fd011 Revert "Allow apps in /system/priv-app to call and execute su commands"
- ▪ 3d9b49b Revert "Introduce sepolicy exceptions for theme assets"
- ▪ c156db4 Revert "sepolicy: fix themed boot animation"
- ▪ fdad3fd Revert "sepolicy: fix themed sounds"
- ▪ b6bc55f sepolicy: fix themed sounds
- ▪ 2b33b12 sepolicy: fix themed boot animation
- ▪ bb40596 Introduce sepolicy exceptions for theme assets
- ▪ 06635a9 Allow apps in /system/priv-app to call and execute su commands
- ▪ 36164c6 Add policy to SELinux to allow ViPER4Android in enforcing mode
- ▪ 3b528f0 OMS7-N: Add service 'overlay' to service_contexts
- ▪ 5663ce2 RR: 7.1 fix
- ▪ 53bc460 sepolicy: Allow platform_app to run su_exec() (1/2)
- ▪ c7c2125 sepolicy: Allow system_server to run su_exec() (1/2)
- ▪ 2f058da sepolicy: Allow system_app to run su_exec()
- ▪ cf4570d sepolicy: Allow remount /system
- ▪ e6105f1 Merge tag 'android-7.1.2_r24' into cm-14.1
-
- ▪ project vendor/cm/
- ▪ 44d782b vendor: add a prop to get the AOSP tag from manifest
-
- ▼ 07/05/2017
-
-
- ▪ project packages/apps/Jelly/
- ▪ fa0b42a Jelly: Don't save form data in incognito mode
-
- ▪ project system/core/
- ▪ 01a7186 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_system_core into nougat
-
- ▪ project vendor/cm/
- ▪ 3739625 Add LTE support for China Telecom Macau.
- ▪ 3f2013a qcom_utils: Cleanup supported QCOM_BOARD_PLATFORMS
- ▪ 3177211 build: qcom_target: Define MASTER_SIDE_CP_TARGET_LIST
-
- ▼ 07/04/2017
-
-
- ▪ project hardware/qcom/fm/
-
- ▪ project packages/apps/Gallery2/
-
- ▪ project packages/apps/Jelly/
-
- ▪ project packages/apps/Profiles/
-
- ▪ project packages/apps/Terminal/
-
- ▪ project packages/providers/DataUsageProvider/
-
- ▪ project packages/providers/WeatherProvider/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-
- ▼ 07/03/2017
-
+ ▪ project frameworks/opt/net/wifi/
+ ▪ 1f8fc743 Merge tag 'android-7.1.2_r29' into cm-14.1
 
  ▪ project hardware/qcom/audio-caf/msm8916/
- ▪ 5578c76 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.22' into cm-14.1-caf-8916
+ ▪ 7fcca3ecd Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio-caf/msm8937/
+ ▪ 9dbd0629b Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio-caf/msm8952/
+ ▪ 34f4914d6 Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio-caf/msm8960/
+ ▪ e24866674 Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio-caf/msm8974/
+ ▪ 0d8579c53 Fix security vulnerability: Equalizer setParameter memory overflow
 
  ▪ project hardware/qcom/audio-caf/msm8994/
- ▪ 9cddbb8 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.14' into cm-14.1-caf-8994
+ ▪ 9dcddd7c2 Fix security vulnerability: Equalizer setParameter memory overflow
 
- ▪ project hardware/qcom/fm/
- ▪ 7a29d93 FM: Fix helium hal build
- ▪ 0df98d3 Change rename_dialog background color to default
- ▪ f62c66a FMStats: fix GetFMStatsForFreq error for non-cherokee
+ ▪ project hardware/qcom/audio-caf/msm8996/
+ ▪ 5b1254761 Fix security vulnerability: Equalizer setParameter memory overflow
 
- ▪ project packages/apps/Gallery2/
- ▪ c45b89b Gallery2: Fix crash after returning from albums in wallpaper picker
+ ▪ project hardware/qcom/audio-caf/msm8998/
+ ▪ c519e1ad0 Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio/default/
+ ▪ a4f1bc583 Merge tag 'android-7.1.2_r29' into cm-14.1
 
  ▪ project packages/apps/Jelly/
- ▪ b8109ec Jelly: Update suggestions provider API URLs
+ ▪ f20c0a4 Jelly: Add Yandex search engine
 
- ▼ 07/02/2017
+ ▪ project packages/apps/Settings/
+ ▪ 9f245e7e65 Settings:Sensor block per-package switch[2/2]
+
+ ▪ project system/bt/
+ ▪ 80cca318 Revert "Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into cm-14.1"
+
+ ▼ 08/07/2017
+
+
+ ▪ project packages/apps/ResurrectionStats/
+ ▪ 6b6f3b3 Stats: RR v5.8.4
+
+ ▪ project packages/services/OmniJaws/
+ ▪ 271b581 Update config.xml
+ ▪ 3f47dbd Use our key
+
+ ▪ project vendor/cm/
+ ▪ e74670c3 Update changelog to 5.8.4
+
+ ▼ 08/06/2017
 
 
  ▪ project frameworks/base/
+ ▪ 509aaf96787 AppOps: Fix yet another deadlock
+ ▪ 7dbfbeb0335 Frameworks Cleanups
+ ▪ 10874b8224a pocket: introduce pocket bridge
+ ▪ 42af8ad2131 policy: introduce pocket lock
+ ▪ abd6b0e02ba pocket: introduce pocket judge
+ ▪ 9c2bc7e8dc1 base: Introduce Accidental Touch
+ ▪ 5a0945c43cc frameworks: PIE 3.0 (nougat)
+ ▪ 4df79251675 Revert "Forward Port: PIE 3.0 (1/2)"
 
- ▪ project hardware/ti/omap4/
- ▪ 030bec5 BUGBASH-733 Memory leak in system_server caused by suspend / color fade
+ ▪ project hardware/qcom/display-caf/apq8084/
+ ▪ e2f4340ea cec: Fix breakage due to API change
+
+ ▪ project hardware/qcom/media-caf/apq8084/
+ ▪ 02e57500c videopp: fix include paths for lineage
 
  ▪ project packages/apps/DUI/
 
- ▪ project packages/apps/Jelly/
- ▪ a7659df Jelly: Make UrlResolvedReceiver final
- ▪ b15286f Jelly: Move bing suggestions provider to https
- ▪ f50b7e9 Jelly: Fix Suggestions Provider strings (suggestion / uggestion)
- ▪ 697e32d Jelly: Remove unused parameter
+ ▪ project packages/apps/Dialer/
 
  ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/PackageInstaller/
 
+ ▪ project packages/apps/ResurrectionOTA/
+
  ▪ project packages/apps/Settings/
+ ▪ 3701c92125 Dslv: Fix FC when adding duplicate shortcuts
+ ▪ c1348a0d92 Settings:Add preference for pocket judge [2/2]
+ ▪ e090493570 PieSettings: Add support for Pie Gravity
+ ▪ 9749d2d4c4 ButtonsSettings: Add preference for Accidental Touch
+ ▪ 5fd64bebc0 Update PIE settings to 3.0
 
- ▪ project packages/services/OmniJaws/
+ ▪ project vendor/cm/
+ ▪ f8692056 Bump version to 5.8.4
+ ▪ 8272685d vendor: Fix a user profile data denial
+ ▪ be1cf971 vendor: Add selinux policy for pocket bridge
+ ▪ 5ea6f1ce vendor:Add sysfs permissions for pocket bridge
+ ▪ 27711887 pa: Add pocket judge selinux policy
 
- ▼ 07/01/2017
+ ▼ 08/05/2017
 
+
+ ▪ project packages/apps/Settings/
+ ▪ 6c960c2f11 Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into nougat
+ ▪ 40bdde5bbc Fix settings FC and freezes after reboot on enforcing mode
+
+ ▼ 08/04/2017
+
+
+ ▪ project frameworks/opt/telephony/
+ ▪ b1a8579f Telephony: Keep preferred SMS Sim
 
  ▪ project hardware/qcom/fm/
 
+ ▪ project hardware/qcom/media-caf/msm8916/
+ ▪ ec789248f Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.23' into cm-14.1-caf-8916
+
+ ▪ project hardware/qcom/media-caf/msm8994/
+ ▪ 1afe59f2c Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.15' into cm-14.1-caf-8994
+
  ▪ project packages/apps/AudioFX/
+
+ ▪ project packages/apps/Bluetooth/
+
+ ▪ project packages/apps/Calendar/
 
  ▪ project packages/apps/Camera2/
 
@@ -272,16 +275,285 @@
 
  ▪ project packages/apps/Eleven/
 
+ ▪ project packages/apps/Email/
+
+ ▪ project packages/apps/EmergencyInfo/
+
  ▪ project packages/apps/Gallery2/
 
+ ▪ project packages/apps/HTMLViewer/
+
  ▪ project packages/apps/Jelly/
- ▪ 66d1b83 Jelly: Allow launching external apps
- ▪ 9d693cc Jelly: Remove unneeded getApplicationContext call
- ▪ d6b3b84 Jelly: Add non encrypted google search engine
- ▪ 897fa20 Jelly: Propagate custom request headers to WebClient
- ▪ 58c2aed Jelly: Add suggestions
+
+ ▪ project packages/apps/ManagedProvisioning/
+
+ ▪ project packages/apps/Settings/
+ ▪ 1bed82a055 Add Maintainer For Android One 1st gen. (sprout) (#832)
+
+ ▪ project packages/apps/SetupWizard/
+
+ ▪ project packages/apps/Snap/
+
+ ▪ project packages/apps/Tag/
+
+ ▪ project packages/apps/Trebuchet/
+
+ ▪ project packages/apps/TvSettings/
+
+ ▪ project packages/apps/UnifiedEmail/
+
+ ▪ project packages/inputmethods/LatinIME/
+
+ ▪ project packages/providers/CalendarProvider/
+
+ ▪ project packages/providers/DownloadProvider/
+
+ ▼ 08/03/2017
+
+
+ ▪ project device/qcom/sepolicy/
+ ▪ 415717e sepolicy: Add qpnp-smbcharger battery supply contexts
+ ▪ 6ff8a5f sepolicy: Add new dc_supply sysfs
+
+ ▪ project packages/apps/OmniSwitch/
+ ▪ 31d0a4a Fixing a NullPointerException (#8)
+
+ ▼ 08/01/2017
+
+
+ ▪ project packages/apps/Eleven/
+ ▪ 1cc8b9e Eleven: Add WRITE_MEDIA_STORAGE permission
+ ▪ 083e7f9 Eleven: Promote to privileged app
+ ▪ 5301693 Eleven: allow artwork to scale down
+
+ ▪ project packages/apps/Gallery2/
+ ▪ c88c5726b Gallery2: Fix various issues and glitches
+
+ ▪ project packages/apps/Snap/
+ ▪ a206d7565 Snap: fix low resolution front camera switch icon
+
+ ▼ 07/31/2017
+
+
+ ▪ project device/qcom/sepolicy/
+ ▪ 08a5a42 sepolicy: Allow untrusted_apps to read usb power supply stats
+
+ ▪ project packages/apps/Gallery2/
+ ▪ d74ca5a9d Gallery2: Fix potential crash
+ ▪ 7e1b2d258 Gallery2: Switch to navigationbar from support libs
+ ▪ 82b6848ef Gallery2: Fix can't parse documents uri
+ ▪ eceb1edb1 Gallery2: Fix views overlap
+ ▪ 8c7fe642b Gallery2: Support GIF animation
+ ▪ b923c258f Gallery2: Increase the size of the tiles when decoding images
+ ▪ ccaf2e443 Gallery2: Support the newly added media file types in MTP mode
+ ▪ ebce1308f Gallery2: Fix use of uninitialized stack variables
+ ▪ 1fbe34291 Gallery2: Remove unused renderscript class
+ ▪ 40fe6d233 Gallery2: Fix spelling error
+ ▪ 5a0501d1d Gallery2: Properly declare the own permissions
+ ▪ 9c69a829b Gallery2: Remove more possible NPEs
+ ▪ 4288cf9e0 Gallery2: Enable frames in the editor
+ ▪ 09a950e43 Gallery2: Remove slideshow option if there are only videos
+ ▪ 75e883a9f Gallery2: Remove 3D overscroll effect
+ ▪ 4cbaf64e2 Gallery2: Disable dummy starting window
+ ▪ 7aeaefcfc Gallery2: Fix up audio effects dialog
+ ▪ cc80b1b5e Gallery2: Everyone or no one
+ ▪ a0dc1b87d Gallery2: Replace hamburger menu with bottom bar
+ ▪ ae2d5c13c Gallery2: Change all share intents to chooser style
+ ▪ 1b893a41e Gallery2: Update menu
+ ▪ b09126420 Gallery2: Update theme
+ ▪ 7eb847c94 Gallery2: Move & improve CAF strings
+ ▪ 81e24fe0e Gallery2: Make sure no NPE happens
+ ▪ 9c735aedd Gallery2: Remove invalid comment from manifest
+ ▪ 5b0141c65 Gallery2: Cleanup renderscript flags in Android.mk
+ ▪ 108756ab1 Gallery2: Reduce logspam in video player
+ ▪ e0c0ac0be Gallery2: Store DATE_TAKEN as milliseconds
+ ▪ bb1631470 Gallery2: Modify AOSP EL translations
+ ▪ 3861e9751 Gallery2: Remove CAF translations
+ ▪ 3bf31b249 Gallery2: Add record time to details view
+ ▪ c1cf32450 Gallery2: Fix crash of gallery on showing details
+ ▪ 880d50792 Gallery2: Fix crash when Bluetooth service is disabled
+ ▪ 2c75f4004 Gallery2: Try to open existing camera
+ ▪ db84f5bb3 Gallery2: New icon
+ ▪ 5f5c89261 Gallery2: Bump minsdk and targetsdk version
+ ▪ 658721317 Gallery: FilterShowActivity: Fix loading spinner being show forever
+ ▪ 55bf17f33 Gallery: TileImageView: fix NPE
+ ▪ be9357b06 FaceDetect: Catch more linker errors during initialization
+ ▪ 8beb6f9c5 FaceDetect: Catch linker errors during initialization
+ ▪ ea5a3097f Bump API to match dependencies.
+ ▪ 1a3f2927d Add missing includes.
+ ▪ 5c7461235 Cleanup warnings in jni.
+ ▪ b7d08f97a Fix misc-macro-parentheses warnings in Gallery2.
+ ▪ 9110325ab Float.NaN != ... always evaluates to true, use Float.isNaN.
+ ▪ 69f87c408 Rename app back to Gallery
+
+ ▼ 07/30/2017
+
+
+ ▪ project frameworks/base/
+ ▪ c4a83cf2e2e Allow to disable battery light when in DND mode [1/2]
+ ▪ 20dce166e74 SystemUI: Store value of lockscreen media art
+ ▪ 3dff8ca8096 AppOps: Prevent deadlock when making note of applications
+ ▪ 0e93f345da7 KernelCpuSpeedReader: Account for missing sysfs nodes
+ ▪ 33c6d4fd285 Revert "KernelCpuSpeedReader: Account for missing sysfs nodes"
+ ▪ 6f93f576838 slim recents: Be sure to catch all exceptions for startActivityFromRecents
+ ▪ da27683f990 slim recents: Favlist creation: use HashSet instead of Arraylist
+ ▪ c46b63ce748 SystemUI: locked tasks should have a valid view
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Jelly/
+ ▪ 083e503 Jelly: remove 'Mobile' from desktop user agent
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/ResurrectionOTA/
+
+ ▪ project packages/apps/Settings/
+ ▪ 648e10288d MSIM: Fix user set DDS sub in hotswap cases.
+ ▪ 5a56b01a2a Allow to disable battery light when in DND mode[2/2]
+
+ ▪ project packages/services/OmniJaws/
+
+ ▼ 07/29/2017
+
+
+ ▪ project packages/apps/SetupWizard/
+ ▪ d261c7a SetupWizard: Don't show ChooseDataSimActivity on single sim devices
+ ▪ 6971663 SetupWizard: Fix crash when sims are absent
+ ▪ b1dd429 SetupWizard: Fix a few possible NPEs
+
+ ▪ project packages/apps/Snap/
+ ▪ db73354ac Revert "Revert "SnapdragonCamera: Adding PRIVILEGED true""
+
+ ▼ 07/28/2017
+
+
+ ▪ project external/chromium-webview/
+ ▪ e205b2a Update webview
+
+ ▪ project packages/apps/Calendar/
+
+ ▪ project packages/apps/Camera2/
+
+ ▪ project packages/apps/CellBroadcastReceiver/
+
+ ▪ project packages/apps/Eleven/
+
+ ▪ project packages/apps/Email/
+
+ ▪ project packages/apps/Exchange/
+
+ ▪ project packages/apps/Jelly/
+
+ ▪ project packages/apps/Snap/
+ ▪ bbb6ee12f Revert "SnapdragonCamera: Adding PRIVILEGED true"
+
+ ▪ project packages/apps/TvSettings/
+
+ ▪ project system/bt/
+ ▪ b30e393e Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into cm-14.1
+
+ ▪ project vendor/cm/
+ ▪ cfcd5e29 Fix build scripts color format
+
+ ▼ 07/27/2017
+
+
+ ▪ project system/netd/
+ ▪ b2d5c79 SoftAp: Fix compilation in netd if  LIBWPA_CLIENT_EXISTS undefined.
+
+ ▼ 07/26/2017
+
+
+ ▪ project frameworks/native/
+ ▪ a3768a911 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
+
+ ▪ project hardware/qcom/fm/
+
+ ▪ project packages/apps/Email/
+
+ ▪ project packages/apps/Jelly/
+
+ ▪ project packages/apps/Messaging/
+ ▪ cf5278b Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_Messaging into nougat
+
+ ▪ project packages/apps/Settings/
+ ▪ 48eecf4199 Add Maintainer for LG G2 (Sprint) LS980 variant (#830)
+ ▪ 213c4d974e Settings: Allow our root options to work with LineageSu as well
+
+ ▪ project packages/apps/SetupWizard/
+
+ ▪ project packages/apps/Snap/
+
+ ▼ 07/25/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 84545104c11 Fix and cleanup dui protected broadcasts [2/2]
+ ▪ 242cf2c120b base: SystemUI: add OmniSwitch hide on home
+
+ ▪ project packages/apps/OmniSwitch/
+ ▪ 89e029a Fix potential FC in the async task
+ ▪ 083543e OmniSwitch: bring back hide broadcast
+ ▪ 0f4b052 OmniSwitch: add unchanged recent task list
+ ▪ a58f458 OmniSwitch: round corners are sexy
+ ▪ 89e9691 OmniSwitch: transparents also wants to see locked apps :)
+ ▪ 92f3ac7 OmniSwitch: locked apps support
+ ▪ 006ea5a OmniSwitch: add force stop in context menu
+ ▪ b51a26c OmniSwitch: icon pack loading needs an early start
+ ▪ 423639f OmniSwitch: fix terrible wrong resizing on compose icons
+ ▪ 908e593 OmniSwitch: better safe then sorry
+
+ ▪ project packages/apps/Settings/
+ ▪ 2bdc971ca8 Fix and cleanup dui protected broadcasts [1/2]
+ ▪ c3e7f21a2e Utils: Fix onboot crash until magisk is found
+ ▪ 4856b02a45 Update LG G3 (D855) Maintainer. (#829)
+ ▪ 51a82c806d Add Maintainer for ZTE BLADE A610 (a610) (#826)
+ ▪ b7e811c905 Add Co-Maintainer for Lettuce (#827)
+
+ ▼ 07/24/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 12fb6d61063 Base: Fix global actions menu emergency button position
+
+ ▪ project vendor/cm/
+ ▪ d235a41c Update Changelog
+
+ ▼ 07/23/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project hardware/qcom/fm/
+
+ ▪ project packages/apps/AudioFX/
+
+ ▪ project packages/apps/Bluetooth/
+
+ ▪ project packages/apps/CMBugReport/
+
+ ▪ project packages/apps/Camera2/
+
+ ▪ project packages/apps/CellBroadcastReceiver/
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Eleven/
+
+ ▪ project packages/apps/Jelly/
+
+ ▪ project packages/apps/PackageInstaller/
 
  ▪ project packages/apps/Recorder/
+
+ ▪ project packages/apps/ResurrectionOTA/
+
+ ▪ project packages/apps/Settings/
 
  ▪ project packages/apps/SetupWizard/
 
@@ -289,126 +561,134 @@
 
  ▪ project packages/apps/Terminal/
 
- ▪ project packages/providers/DataUsageProvider/
-
  ▪ project packages/providers/WeatherProvider/
 
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+ ▪ project packages/services/OmniJaws/
+
+ ▪ project vendor/cm/
+ ▪ 982208ba DeskClock: switch to version 5.0.1 (3745617)
 
  ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
 
- ▼ 06/30/2017
+ ▼ 07/22/2017
 
-
- ▪ project build/
- ▪ a2f759c Disable recovery resource warning
- ▪ 29849f1 Revert "Preventing default locale from being overridden because of buildinfo.sh"
- ▪ 13505f0 Revert "build: skip 'ro.product.device' using  new macro "TARGET_SKIP_PRODUCT_DEVICE""
- ▪ dbe4d61 Makefile: Add the missing dependency on FUTILITY.
- ▪ 14e6c9f Build FUTILITY tool from futility-host.
-
- ▪ project frameworks/av/
- ▪ 0e7e3ed Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into nougat
 
  ▪ project frameworks/base/
- ▪ 9265366 Fix potential KeyguardMonitor FC on unlock
- ▪ b2edd93 Revert "BluetoothTile: Fix in the off state while entering the detail view"
- ▪ 2924709 ActivityStarter: Fix protected app intents
- ▪ 7d5b280 SystemUI: Make play queue toggle more visible
- ▪ c41bff4 Volume Panel: Fix Bluetooth music stream icon when muted
- ▪ 0679fa4 Add support for the .opus file format
+ ▪ 963b2adfce7 Fix custom button icon making touch and animation area smaller [2/3]
+ ▪ 6f903906673 Merge pull request #204 from AndropaX/patch-4
 
  ▪ project packages/apps/DUI/
- ▪ 08efc6c Fix button size not refreshing after a dpi change
- ▪ f758ef8 Media arrows: hide them on keyguard bouncer
+ ▪ 6515568 Fix custom button icon making touch and animation area smaller [1/3]
+
+ ▪ project packages/apps/Jelly/
+ ▪ b8270d7 Jelly: Allow to display pages in full screen mode
 
  ▪ project packages/apps/Settings/
- ▪ 3e1184d Enable some more power menu actions
- ▪ dffe3ae Settings: Hide disabled lockscreen blur from search index
- ▪ d033a65 Settings: handle decrypting larger pattern sizes for sw600dp
- ▪ cc69056 Revert "Settings: Fix internal storage summary for non-emulated storage"
- ▪ afac342 Settings: Fix automatic hotspot turn off summary
- ▪ 962926d Settings: Make string untranslatable
+ ▪ 2353503282 Fix custom button icon making touch and animation area smaller [3/3]
+ ▪ 4f8d736016 Merge pull request #825 from AndropaX/patch-2
 
- ▪ project packages/apps/WallpaperPicker/
- ▪ 2b021c4 WallpaperPicker: Update for wallpaper API changes
+ ▼ 07/21/2017
+
+
+ ▪ project android/
+ ▪ eedb930 Remove ahbottomnavigation
+
+ ▪ project frameworks/base/
+ ▪ 51cc1882152 DeviceInfoUtils: decentralize processor Regex
+ ▪ 021e65a4ba5 DeviceInfoUtils: Expand Processor string #3
+ ▪ a700be4a737 Fix new Processor regex in Nexus 4
+ ▪ 3aa1c51b3e1 BootReceiver: check console-ramoops-0
+ ▪ f27f73ea0c4 Merge remote-tracking branch 'remotes/rr/nougat' into HEAD
+ ▪ 7e09920a4f5 PowerProfile: allow overriding default power profile
+ ▪ e5e8dad7f72 Revert "PowerProfile: allow reading from a file instead of resource"
+ ▪ 3008b48f2d3 Add processor info in device info screen (1/2)
+
+ ▪ project hardware/qcom/media-caf/msm8994/
+ ▪ a21d861ea Merge "mm-video-v4l2: Protect buffer lifecycle with lock"
+
+ ▪ project packages/apps/Jelly/
+ ▪ 54d8d10 Jelly: Remove unused variable in SearchBarController
+ ▪ 063d6a9 Jelly: Use proper popup background attr
+ ▪ ca27881 Jelly: Add "search in page" feature
+
+ ▪ project packages/apps/Settings/
+ ▪ 5cd394f895 Add processor model in device info screen (2/2)
+ ▪ 88342d39a9 Add maintainer for lenovo k6/power (#824)
+
+ ▪ project system/sepolicy/
+ ▪ 34cc176 interfacer: Allow interfacer to find content_service
+ ▪ 72d06e9 Add policy to fix interfacer derp on boot
+ ▪ 458839a sepolicy: Allow system_server to set theme_prop
+ ▪ 86e3f9d sepolicy: add file and domain trans to interfacer
+ ▪ caa8674 Welcome to Theme Interfacer! [2/2]
+ ▪ 3890c0e sepolicy: Redo masquerade rules
+ ▪ 1f43bf4 sepolicy: Fix application of bootanimation
+ ▪ d9cc632 sepolicy: allow masquerade to read and write theme assets
+ ▪ 0a3d0fc sepolicy: rename masquerade domain and allow JobService in system_server
+ ▪ 5ac375f initial policy edits for masquerade to operate rootless
+ ▪ 2965e98 sepolicy: fix themed sounds
+ ▪ 8edd6b3 sepolicy: fix themed boot animation
+ ▪ a03a002 Introduce sepolicy exceptions for theme assets
+ ▪ 13c7a73 OMS7-N: Add service 'overlay' to service_contexts
+ ▪ 39875f9 Add policy to SELinux to allow ViPER4Android in enforcing mode
+ ▪ 1820ef3 RR: 7.1 fix
+ ▪ 40ebd92 sepolicy: Allow platform_app to run su_exec() (1/2)
+ ▪ 6606f8c sepolicy: Allow system_server to run su_exec() (1/2)
+ ▪ 1f5ad77 sepolicy: Allow system_app to run su_exec()
+ ▪ f73b438 sepolicy: Allow remount /system
 
  ▪ project vendor/cm/
- ▪ 94925ac apns-conf: Add Japan Umobile APNs
- ▪ 65227e7 sensitive_pn: Add sensitive numbers for Greece
- ▪ 980082e sensitive_pn: fix Czech Republic MCC
- ▪ 93c4774 sensitive_pn: Add Taiwanese sensitive numbers
- ▪ 0d0b4a0 Add sensitive numbers for Ukraine.
- ▪ 25aa89e Add Virgin Media Ireland to APN's
- ▪ 0d7863e sensitive_pn: Add additional FR number
- ▪ ea6ec70 sensitive_pn: Add additional GB numbers
- ▪ 5cdcee9 sensitive_pn: Add additional PT numbers
- ▪ 5873f8b sensitive_pn: add missing phone number for Brazil
- ▪ 1498b34 roomservice: Search for repos in lineage snippet too
- ▪ e0f8cfc roomservice: Remove support for devices in main manifest
- ▪ eb80e6f Add sensitive numbers for Israel.
- ▪ a632682 sensitive_pn: Add sensitive phone numbers for Czech Republic
- ▪ a0723e8 sensitive_pn: Add Canadian sensitive numbers
- ▪ 3483b70 sensitive_pn: Add more numbers from the Netherlands
+ ▪ 715986b0 Merge remote-tracking branch 'remotes/rr/nougat' into HEAD
+ ▪ bc96cada repopick: Add 'reset' option
+ ▪ 5a5e4396 kernel: Add savedefconfig target
+ ▪ 44385998 qcom: Enable TARGET_USES_QCOM_MM_AUDIO
+ ▪ 5b716952 repopick: don't bail on drafts
 
- ▼ 06/29/2017
+ ▼ 07/20/2017
+
+
+ ▪ project vendor/cm/
+ ▪ 82a5e5a3 prebuilt: update Magisk Manager 5.1.1 (#96)
+
+ ▼ 07/19/2017
+
+
+ ▪ project hardware/qcom/fm/
+ ▪ 165ef42 FM: Use some sane colors
+
+ ▪ project hardware/qcom/media-caf/msm8994/
+ ▪ 70174f06c mm-video-v4l2: venc: Protect buffer from being freed while accessing
+ ▪ 234343494 mm-video-v4l2: Protect buffer lifecycle with lock
+
+ ▪ project vendor/cm/
+ ▪ ac577f3b Update prebuilts to latest versions (#95)
+
+ ▼ 07/18/2017
 
 
  ▪ project frameworks/base/
+ ▪ 8320284fcfc SEEMP: Adding auth framework for outgoing SMS messages.
+ ▪ 7490b95cef2 SEEMP: Adding auth framework for outgoing SMS messages.
 
- ▪ project packages/apps/Jelly/
- ▪ 69173dd Jelly: Add show/hide keyboard utilities
+ ▪ project hardware/qcom/media-caf/msm8916/
+ ▪ 508bb0ebb mm-video-v4l2: Protect buffer lifecycle with lock
 
- ▪ project packages/apps/Settings/
+ ▼ 07/17/2017
 
- ▼ 06/28/2017
-
-
- ▪ project external/stagefright-plugins/
- ▪ 931ae6b FFmpegExtractor: Fix "supported" typo in logs
 
  ▪ project frameworks/base/
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Jelly/
- ▪ 9a5fcdd Jelly: Search on Enter key
- ▪ 74c7e51 Jelly: Don't reload on keyboard changes
-
- ▪ project packages/apps/OmniSwitch/
+ ▪ bdfc59e31b1 ScreenCap : Add jpeg support
+ ▪ df6580a28f7 Configurable Keyguard alpha and Keyguard Bouncer alpha [1/2] inspired by the BrightLockscreen xposed module: https://github.com/Generalbrus/BrightLockscreen
+ ▪ 33fb4ddfcd7 RecentsView: Hiding membar, memtext and fab on drag start.
+ ▪ b66c326d2d0 Connectivity: Fix format arguments
+ ▪ 9fcae18c687 SystemUI: Fix Notification Background Color Issue
+ ▪ 73d5dc445cb Fix keyguard prompt reason showing with fingerprint reboot enabled
 
  ▪ project packages/apps/Settings/
- ▪ 7470d86 Add device Samsung Galaxy S4 VE GT-I9515 jfvelte (#813)
+ ▪ 2fdd40f47d MiscSettings: Remove SElinux Switch & System App remover if no Magisk
+ ▪ 61a20bc452 Fix up Suspend actions fragment summary string value
+ ▪ 09611a0c14 Settings:Configurable Keyguard & bouncer alpha [2/2]
 
- ▼ 06/27/2017
-
-
- ▪ project frameworks/av/
- ▪ eb9cc20 CameraService: Fix cameraId type of onDeviceStatusChanged
-
- ▪ project packages/apps/Gallery2/
- ▪ e988d6a Gallery2: Fix views overlap
-
- ▪ project packages/apps/Jelly/
- ▪ cc66a61 Jelly: Add WebChromeClientCompat
-
- ▼ 06/26/2017
-
-
- ▪ project packages/apps/Eleven/
- ▪ 38c5aea Eleven: request record audio permission for visualizer
-
- ▪ project packages/apps/Jelly/
- ▪ e3b22ba Jelly: Fix some lint warnings
-
- ▪ project packages/apps/Settings/
- ▪ 5d3664d Add Xiaomi MI6(sagit) maintainer (#812)
-
- ▪ project packages/providers/MediaProvider/
- ▪ 0f47b6e MediaProvider: Fix failure in android.provider.cts.MediaStore_FilesTest
- ▪ 815436d Gallery2: Fix thumbnails of new edit photos display wrongly in Documents.
- ▪ f3bd6a0 Music: Fix force closed when plug out the SD card while music is playing.
- ▪ eb0378b MediaProvider: Fix SQLiteDiskIOException.
- ▪ b619475 Revert "Fix check for existence of parent"
- ▪ 21ce3cd Revert "MediaProvider: Fix where condition of delete queries"
-
+ ▪ project vendor/cm/
+ ▪ e4a1100e Add Proper Magisk 13.2 zip
+ ▪ a860ae39 Delete this corrupt zip
