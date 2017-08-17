@@ -1,6 +1,15 @@
-
  ▼ Resurrection Remix Nougat Ver 5.8.4 Changelog
 
+
+ ▼ 08/16/2017
+
+ ▪ Fixed camera bug
+ 
+ ▪ project hardware/qcom/bt-caf/
+ ▪ 328d8af Revert "Merge tag 'LA.UM.5.5.r1-04900-8x96.0' into HEAD"
+
+ ▪ project packages/apps/Settings/
+ ▪ 115a5419ea added helium (#843)
 
  ▼ 08/15/2017
 
@@ -10,6 +19,7 @@
  ▪ df1f26ec20 Fix i9500 maintainer dont show (#840)
  ▪ 72deb1296d Fix land device position (#839)
  ▪ f6cc7a7c19 Add Redmi 4X device maintainer (#838)
+
 
  ▼ 08/14/2017
 
