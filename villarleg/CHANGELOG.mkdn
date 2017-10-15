@@ -1,5 +1,12 @@
 ▼ Resurrection Remix Nougat Ver 5.8.5 Changelog
 
+ ▼ 10/15/2017
+
+
+ ▪ project packages/apps/Eleven/
+ ▪ 91a8a10 Eleven: Fix potential NPE when media server crashes
+ ▪ 119d774 Eleven: Don't use a sticky service
+
 
  ▼ 10/13/2017
 
