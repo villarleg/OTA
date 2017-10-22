@@ -1,5 +1,78 @@
 ▼ Resurrection Remix Nougat Ver 5.8.5 Changelog
 
+ ▼ 10/22/2017
+
+
+ ▪ project hardware/qcom/bootctrl/
+ ▪ 462212d Add msm8953 to the filter
+
+ ▪ project hardware/qcom/fm/
+
+ ▪ project packages/apps/AudioFX/
+
+ ▪ project packages/apps/Calendar/
+
+ ▪ project packages/apps/Gallery2/
+
+ ▪ project packages/apps/Jelly/
+
+ ▪ project packages/apps/SetupWizard/
+
+ ▪ project packages/apps/Snap/
+
+ ▼ 10/20/2017
+
+
+ ▪ project system/sepolicy/
+ ▪ 4cfa94e sepolicy: Allow exfat and ntfs access for sdcard
+
+ ▼ 10/19/2017
+
+
+ ▪ project packages/apps/Calendar/
+ ▪ de97bcee Calendar: Show year info for week view
+
+ ▼ 10/17/2017
+
+
+ ▪ project external/wpa_supplicant_8/
+ ▪ ac78917 Clear PMK length and check for this when deriving PTK
+ ▪ a630551 Add debug prints on PMK configuration in WPA supplicant
+ ▪ fbf7ecc WPA: Extra defense against PTK reinstalls in 4-way handshake
+ ▪ 5c64f90 Remove all PeerKey functionality
+ ▪ 726e02c Add MGMT_TX_STATUS_PROCESS command for testing purposes
+ ▪ cda7ff1 FT: Do not allow multiple Reassociation Response frames
+ ▪ 8fb5fe9 WNM: Ignore WNM-Sleep Mode Response without pending request
+ ▪ b6fccd0 TDLS: Reject TPK-TK reconfiguration
+ ▪ 04d9c3d Fix PTK rekeying to generate a new ANonce
+ ▪ bab71fa Prevent installation of an all-zero TK
+ ▪ 812c80a Extend protection of GTK/IGTK reinstallation of WNM-Sleep Mode cases
+ ▪ 4326a42 Prevent reinstallation of an already in-use group key
+ ▪ 3edbf11 hostapd: Avoid key reinstallation in FT handshake
+ ▪ b075172 Set EAPOL-Key Key Length field to 0 for group message 1/2 in RSN
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/Calendar/
+ ▪ 56dc4a82 Calendar: Show week start and end in title for Week view
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/ResurrectionOTA/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+
+ ▼ 10/16/2017
+
+
+ ▪ project packages/apps/Eleven/
+ ▪ 91a8a10 Eleven: Fix potential NPE when media server crashes
+ ▪ 119d774 Eleven: Don't use a sticky service
+
  ▼ 10/15/2017
 
 
