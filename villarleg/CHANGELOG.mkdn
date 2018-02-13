@@ -1,0 +1,275 @@
+
+ ▼ Resurrection Remix Oreo Ver 6.0.0 Changelog
+
+
+====================
+     02-13-2018
+====================
+
+   * android/
+5605f6d manifest: Unstage 15.1
+02bad15 Switch back to AOSP system/media
+
+   * packages/apps/Settings/
+9227db2c9f Capitalize Smart Pulldown settings (#900)
+d8032dd23f Fixes typo in Clock & Date (#899)
+833e963cb7 Strings: fix typo
+
+====================
+     02-12-2018
+====================
+
+
+   * frameworks/opt/telephony/
+0497c6b35 PhoneFactory: fix creating a cdma phone type
+7be7457b0 Telephony: Enable NV based CDMA data call.
+
+   * hardware/qcom/audio-caf/msm8952/
+1cd9f3e7d audio: configs: update policy configuration to fix vts failure
+bc8dadebe hal: fix failure in running VtsHalAudioV2_0Target module
+965a8a687 mm-audio: aenc: Fix VTS failures for encoders
+9518fd77b hal: Fix failure in VtsHalAudioV2_0Target test due to spkr protection
+65ec3c07c Merge remote-tracking branch 'caf/LA.BR.1.3.7_rb1.8' into lineage-15.1-caf-8952
+
+   * hardware/qcom/media-caf/msm8952/
+e34134ab7 Merge remote-tracking branch 'caf/LA.BR.1.3.7_rb1.8' into lineage-15.1-caf-8952
+
+   * packages/apps/DUI/
+c951967 Pulse: don't lose color when changing render mode
+e219cc2 Pulse fading blocks render: use more visible colors
+
+   * packages/apps/Settings/
+0bd35af280 Update Nexus 5X maintainer (#896)
+e5a179e806 Settings: Fix sim color picker dialog
+
+====================
+     02-11-2018
+====================
+
+
+   * build/make/
+fb13225cd core, release: add sload.f2fs for otatools.zip
+
+   * development/
+d98aff6a0 add mke2fs.conf to Android SDK build-tools
+bb3df83ee add sload_f2fs to Android SDK build-tools
+f0ca62336 add make_f2fs to Android SDK build-tools
+0a39cef6a DevTools: Hide the icon!
+
+   * frameworks/base/
+87b055775fe Revert "Update default dialer and sim color 2/2"
+0bb4ac12203 Revert "Forward-port support for chained input filters"
+15644996342 Revert "Edgegestureservice:Fix bootloop caused by un intialization of mImputfiler"
+e39d2dae949 Revert "Fix derp"
+d0bd925aa25 Fix derp
+f481f1f2bdd Edgegestureservice:Fix bootloop caused by un intialization of mImputfiler
+
+   * hardware/qcom/gps/
+e970345 gps: msm8960: Move device dependent modules to /vendor
+882fa23 gps: msm8960: Cleanup obsolete LOCAL_PRELINK_MODULE
+f72d4fb msm8960: Default apn ip type to ipv4
+017983b msm8960: Add support for IPV6 in AGPS Interface
+0f32001 gps: Use    * pathmap
+
+   * hardware/qcom/media/
+d063be195 media: vdec: Include nativebase headers
+666918fa7 mm-video: venc: Correct a typo in variable name
+0ee127dfe Revert "msm8974: remove from top level makefile"
+f7548b7a0 media: Use kernel headers
+ce40a65bd media: Add missing links
+db78e9b26 media: Use    * pathmap
+
+   * packages/apps/Settings/
+338649ad2d Update hero2lte maintainer (#895)
+e87b772db4 Update lettuce maintainer (#892)
+e38dedccc0 Updated D855 Maintainer (#894)
+f4af3d49eb Update Galaxy Note III Qcom maintainer
+
+   * system/bt/
+4b19fe38 btm_inq: fix build with BTA_HOST_INTERLEAVE_SEARCH
+a0074967 Prevent abort in case of command timeout
+f493c358 Bluetooth: Read BLE vendor capability to proceed on Secure conn
+
+====================
+     02-10-2018
+====================
+
+   * android/
+03fd743 rr: track own qcom/sepolicy
+f275300 Merge branch 'oreo' of ssh://github.com/ResurrectionRemix/platform_manifest into default
+715b303 rr: track own sepolicy
+0195f1f Update README.mkdn
+
+   * bootable/recovery/
+245b34d3 add sload.f2fs for recovery format
+58337225 root: Fix an issue when volume length from fs_mgr is negative.
+741118c4 recovery: format f2fs with encrypt/quota
+2998e00a Integer overflow observed while formatting volume
+715ba0c2 roots.cpp: Clean up format_volume().
+c6ae3469 recovery: handle security footer before passing size to mke2fs
+b3632423 roots.cpp: Reformatting the file.
+46dd1290 Revert "recovery: handle security footer before passing size to mke2fs"
+
+   * device/qcom/sepolicy/
+b7a1939 qcom/sepolicy: fix path
+
+   * device/rr/sepolicy/
+65e9776 Merge pull request #1 from jhenrique09/oreo
+c23cfe5 Add pocket judge selinux policy
+3eb3b2d sepolicy: Add policy for edgegestureservice
+51524a9 sepolicy: update for rr
+
+   * frameworks/base/
+8613b7fb109 MediaScanner: Detect folders
+ca5f9cd0d97 core: Import some PG string improvements from CM 13.0
+
+   * packages/apps/CarrierConfig/
+85e2bcb CarrierConfig: Load ERI configuration for U.S. Cellular
+
+   * packages/apps/Nfc/
+d0f2684d nxp: NativeNfcManager: Implement missing inherited abstract methods
+
+   * packages/apps/Settings/
+4fbee5ec66 mido: Update maintainer (#891)
+90158aa270 Update a6000 maintainer (#889)
+71a312c087 Update lettuce maintainer (#888)
+
+   * system/core/
+cabf9774b Merge remote-tracking branch 'LineageOS/staging/lineage-15.1' into oreo
+ab0aca97a Added missing AID which is causing setgroups to fail
+3aecbd732 healthd: Reinitialize mChargerNames for every battery update
+
+   * system/sepolicy/
+9570abd3 add sload_f2fs permission
+49f52f31 make_f2fs: grant rw to vold
+7ce6c51b Allow e2fs to format cache
+78e311be Allow e2fs to rw devpts
+
+   * system/vold/
+61a3249 cryptfs: support make_f2fs with quota
+
+   * vendor/rr/
+887d1774 prebuilt: Fix all bootanimations (#106)
+
+====================
+     02-09-2018
+====================
+
+   * android/
+8a519ba Update README.mkdn
+d9d41ad crowdin: fix sync
+68a0cb6 rr: add crowdin manifest
+db8e17a Update README.mkdn
+5c4edf7 Update README.mkdn
+9d0da29 Update repos
+96ed203 add SnapdragonCamera2 omni
+f39fe5e Add back snap
+64f45b9 Revert "Remove camera2"
+
+   * build/make/
+3ec741c81 [1/2] build: add OTA script do delete package cache
+
+   * frameworks/base/
+7a4396a92c6 Merge branch 'oreo' of https://github.com/ResurrectionRemix/private_frameworks_base into oreo
+b9bf5d7fc64 Projekt->rr
+f599c4abd82 Projekt->rr
+5599a88a703 Themes: SystemUI: expose screen pinning colors
+8b34e14f18c Themes: Expose power save mode color
+e2ade4e153b Themes: SystemUI: Expose QS background opacity
+7acedeb9630 Themes: SystemUI: Expose QS edit item decoration background color
+a2df2f48b05 Themes: Allow Permission Icons to be fully themed
+87fa19ba2cc Themes: Allow Immersive cling colors to be fully themed
+4f2316455fb Themes: Expose resolver hardcoded colors
+b6b10f58d83 Themes: base: expose toast colors for themes
+23dc2b87a04 Themes: Expose Keyguard affordance circle background
+8044c76a4c2 Themes: Allow volume slider and thumb to work with custom images.
+a68be156477 Themes: Expose Screenshot flash and background colors
+9d550134b37 Themes:  Expose Keyboard Shortcuts Dialog
+9bcd5c4c5ad Themes: graphics: ADB "N" icon compatible with OMS7
+98516f6bcd6 Themes: SystemUI: Expose switch bar title
+92b57c5becf Themes: Allow Navbar ripple color to be themed
+023d3d7f3f5 Themes: SystemUI: Use own drawables for QS expand icon
+9482eed9ba0 Themes: Notifications: extend dynamic notification bool for ambient notifications
+5634ab523da Themes: Notification dynamic colors bool compatible with OMS7
+e2a76638c07 Themes: Notifications: Expose a bool to disable dynamic colors
+ae3c24ce658 Screenshot: append app name to filename
+850b2bbe3c3 perf: Adapt for HIDL Lineage power hal
+5d4c2b7d2af perf: Add plumbing for PerformanceManager
+
+   * lineage-sdk/
+387d587 lineage-sdk: Reenable performance profiles
+
+   * packages/apps/LineageParts/
+0282134 LineageParts:Make Button Settings and Hardware Key Settings Non Searchable
+ea30b2f LineageParts: Remove per app profiles pref
+6e4a036 LineageParts: Add padding to SeekBarPreference title and summary
+8413b25 LineageParts: enable perf profiles
+
+   * system/core/
+8a626b463 adbd: Disable "adb root" by system property (2/3)
+28bebe0bd Update permissions to the superuser binary
+
+   * vendor/rr/
+6ed0ab65 Add SnapdragonCamera2
+61c9c365 [2/2] omni: add OTA script do delete package cache
+6cc54aca Remove google cam
+
+====================
+     02-08-2018
+====================
+
+   * android/
+4fe3227 Revert "manifest: track RR Stats"
+
+   * device/qcom/sepolicy/
+856dcf4 legacy: Allow qcom power HAL to interact with perfd
+
+   * device/rr/sepolicy/
+a6a0370 sepolicy: Add policy for vendor.lineage.power HAL
+
+   * external/tinycompress/
+1e6da3a tinycompress: include kernel headers
+a558c11 Revert "libtinycompress: Android.mk -> Android.bp"
+
+   * frameworks/av/
+170dbe350 soundtrigger: fill in default extras from dsp
+
+   * hardware/lineage/interfaces/
+4255ced vibrator: Set perms before hal is started
+c169bd0 lineage/interfaces: power: Add HIDL HAL interface
+
+   * hardware/qcom/power/
+c1a9261 power: msm8974: Add support for power profile
+5584ebb power: Use monotonic time for interaction boost
+d8022f6 power: msm8998: Fix perf mode switch
+fed6fde power: msm8996: Support VR + Sustained performance mode
+281c136 power: msm8996: Using PerfHAL API
+5ec3773 power: Prepare for power profile support
+8baf47d power: Add known perf hint IDs
+c9f97d7 power: msm8996: Add support for power profiles
+2f0ce46 power: msm8998: Support power profiles
+
+   * packages/apps/Dialer/
+fa4ae989a Re-add dialer lookup.
+56aa9e55b Allow using private framework API.
+
+====================
+     02-07-2018
+====================
+
+   * android/
+388cd8f Merge remote-tracking branch 'origin/oreo' into default
+8979a39 manifest: android-8.1.0_r4 -> android-8.1.0_r11
+
+   * build/make/
+a954c9f50 Disable dataroaming by default
+1c2f3fd14 Merge tag 'android-8.1.0_r11' into oreo
+
+   * frameworks/base/
+c4cbce127e1 [DNM][TEMP]Revert "Swap the order of synthetic password wrapping"
+021f148a2d0 Merge tag 'android-8.1.0_r11' into oreo
+030fc4f4630 Revert "base: Add Dynamic Navbar capability [1/2]"
+
+   * packages/apps/DUI/
+a9a7752 Update dark icon color
+
