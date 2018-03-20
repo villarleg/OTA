@@ -1,179 +1,122 @@
+
  ▼ Resurrection Remix Oreo Ver 6.0.0 Changelog
 
+
+====================
+     03-20-2018
+====================
+
+
+   * bootable/recovery/
+ea68ce9c add sload.f2fs for recovery format
+ed0546e9 root: Fix an issue when volume length from fs_mgr is negative.
+8afef8c1 recovery: format f2fs with encrypt/quota
+312e0e7b Integer overflow observed while formatting volume
+
+   * device/leeco/msm8996-common/
+6e6c9ba msm8996: selinux: fix bt denial
+f902ddd msm8996: selinux: cleanup block device labels
+0ee394b msm8996: init: update usb config from LA.UM.6.5.r1-04000-8x96.0
+
+   * device/leeco/zl1/
+fbbe258 Revert "zl1: audio: add reference path for ec"
+47afd43 zl1: audio: fix acdb id's for bluetooth mic
+
+   * packages/apps/Settings/
+7e73912cfa Add Samsung Galaxy S6 (zerofltexx) (#936)
+
+   * system/vold/
+edd18db minivold: Use libblkid for readMetadata
+
+====================
+     03-19-2018
+====================
+
+
+   * external/unrar/
+a13960a unrar: Fix compile errors with clang
+
+   * hardware/qcom/power/
+047cb66 power: Allow devices to write their own platform specific bits
+
+====================
+     03-18-2018
+====================
+
+
+   * hardware/qcom/fm/
+6ca6a20 libfm_jni: Ignore unused parameters from APIs
+944fa04 libfm_jni: Resolve FM_DEVICE_PATH R/O open flag
+abc6047 libfm_jni: Resolve fread assignment to condition cast
+76d61cf libfm_jni: Remove unused variables
+
+====================
+     03-17-2018
+====================
+
+
+   * frameworks/base/
+
+   * hardware/qcom/display/
+1aa43a5fa msm8974: libexternal should depend on libmedia
+ef4ddf0f4 msm8974: libgralloc: Fix adding offset to the mapped base address
+
+   * lineage-sdk/
+
+   * packages/apps/DUI/
+
+   * packages/apps/LineageParts/
+
+   * packages/apps/ResurrectionOTA/
+
+   * packages/apps/Settings/
+
+   * packages/apps/Snap/
+9b0c005c1 Snap: Configure focus ring preview dimensions
+b2ef15eda Snap: Add support for focus distance
+4bdfff2c9 Drop new focus indicator into Camera2.
+
+   * packages/services/OmniJaws/
+
+====================
+     03-16-2018
+====================
+
+
+   * hardware/qcom/audio/default/
+6ec0a5e12 audio: Make CVD version retrieval nonfatal with ACDB v1
+
+   * hardware/qcom/display/
+86a2c326b msm8974: hwcomposer: Fix regression in hwc_sync
+
+====================
+     03-15-2018
+====================
+
+
+   * build/make/
+c37a57b96 Revert "[TEMP] Disable Script enhancments & fix build"
+
+   * hardware/qcom/audio-caf/msm8952/
+5dd29ee02 Revert "hal: Fix failure in VtsHalAudioV2_0Target test due to spkr protection"
+
+   * kernel/leeco/msm8996/
+705f09f46fa Convert few critical drivers to use msecs_to_jiffies insted of HZ
+8be52618461 Revert "smbcharger: import leeco changes for zl1"
+
+   * system/vold/
+20d950c vold: Also wait for dm device when mounting private volume
+
+   * vendor/rr/
+4abddb01 Add properties for build flash info script
 
 ====================
      03-14-2018
 ====================
 
 
-   * kernel/leeco/msm8996/
-705f09f46faf Convert few critical drivers to use msecs_to_jiffies insted of HZ
-8be526184618 Revert "smbcharger: import leeco changes for zl1"
-
    * vendor/rr/
 65035af5 Merge pull request #110 from BlackDeaths/oreo
 026cc03e Update DocumentsUI overlay for Oreo
 1bff328d lineage: fix sdk documentation generation
-
-====================
-     03-13-2018
-====================
-
-
-   * bootable/recovery/
-409a4472 Update f2fs format code
-9a45e822 recovery: updater: Fix SymlinkFn args
-
-   * device/leeco/msm8996-common/
-0e398a5 msm8996: fix RIL on encrypted devices
-cfb6443 msm8996: wlan: Disable RX wakelock feature
-73de6dc msm8996: wifi: use WCNSS_cfg.dat from qcacld
-450381c msm8996: wifi: sync WCNSS_qcom_cfg.ini with caf
-
-   * frameworks/base/
-70eaea986f6 Merge branch 'oreo' of https://github.com/ResurrectionRemix/android_frameworks_base into oreo
-f7779a27bda Merge branch 'oreo' of https://github.com/ResurrectionRemix/android_frameworks_base into oreo
-8f36fd29f86 SystemUI: Update PB statusbar logo
-4dc1afbd677 Performance: Memory Optimizations
-0f9d1519c92 Fix random systemui crashes during cts test DO NOT MERGE
-db1f3446dc0 base: make settings_dark colors same as material_dark
-a4a2a2029f8 base: update UiManager's night mode according to berry state
-822ceee88b3 SystemUI: allow the power menu to be relocated
-bbb00c4035c Return of the ticker scroll [1/2]
-d38bbe2806f Music ticker: once per track is enough
-
-   * lineage-sdk/
-8d4ce5e sdk: workaround for runtime-permission request dialog with GooglePackageManager
-add4ee5 sdk: fixes for documentation
-927a9c2 sdk: Styles API finalization for API9
-
-   * packages/apps/LineageParts/
-1bbdf92 LineageParts: update for Style APIs updates
-
-   * packages/apps/Settings/
-f368d938c7 FuelGuage: Remove redundant battery percentage settings
-
-   * packages/apps/Snap/
-e4a946e20 Snap: fix copy and paste fail
-
-   * vendor/leeco/
-1758841 msm8996: add hvdcp_opti
-6893956 zl1: import letv acdb calib from 20S
-c6e121d x2: add qdcm calib files
-0df61f1 msm8996: add missing soundfx blobs
-
-====================
-     03-12-2018
-====================
-
-
-   * packages/apps/Settings/
-cb9f5e73a3 Return of ticker scroll [2/2]
-
-   * packages/apps/Snap/
-d600a3b51 Snap: add missing null check on isCamera2Supported
-ea3d12e41 Snap: don't try to set up cameras with ids greater than MAX_NUM_CAM
-
-====================
-     03-11-2018
-====================
-
-
-   * bootable/recovery/
-58decb0c Revert "recovery: Fix format_volume for f2fs"
-b649667a recovery: Fix redraws, flickering, and animation
-6f54468d updater: Fix and improve allowing devices to suppress BLKDISCARD
-
-   * device/rr/sepolicy/
-6ce9bc7 Merge branch 'oreo' of https://github.com/ResurrectionRemix/device_rr_sepolicy into oreo
-10580bc sepolicy: add style api
-6c0cdb0 sepolicy: add style api
-9743af1 sepolicy: Fix neverallow on user builds
-
-   * frameworks/base/
-90fa0e64881 PackageManager: Catch possible NPE from unparsed platform package
-9dc161934e0 LiveDisplayTile: Avoid NPE during boot up phase
-
-   * kernel/leeco/msm8996/
-b1ef955a37f4 leeco imported drivers: do not reference HZ directly
-36b5bc5e7b64 x2: dts: remove pingpong-split from Boe and ofilm pvt panels
-5c0ff45ea86d smbcharger: import leeco changes for zl1
-949a37a637c7 Remove DEBUG configs
-6b2c6d36adf0 input: synaptics_dsx: valid bounds of intr_reg_num
-5f65fed6f6c7 zl1 / x2: regenerate defconfigs
-949fe6fb60e1 input: synaptics_dsx: remove unused synaptics touch screen driver files
-a7777f1aa230 msm: sensor: Add mutex lock during ois power down operations
-e780f92c72db Merge tag 'v3.18.96' into lineage-15.1
-c7dd4def1676 Linux 3.18.96
-9f0eb5a7583c crypto: s5p-sss - Fix kernel Oops in AES-ECB mode
-9e354878ab53 KVM: async_pf: Fix #DF due to inject "Page not Present" and "Page Ready" exceptions simultaneously
-f28eeddd6d12 hippi: Fix a Fix a possible sleep-in-atomic bug in rr_close
-df5d3a09cc3e xen: XEN_ACPI_PROCESSOR is Dom0-only
-94d8f6072804 x86/mm/kmmio: Fix mmiotrace for page unaligned addresses
-97ea05801ad0 mm/early_ioremap: Fix boot hang with earlyprintk=efi,keep
-8964c526e539 dmaengine: jz4740: disable/unprepare clk if probe fails
-582aa86a76b5 xfrm: Fix stack-out-of-bounds with misconfigured transport mode policies.
-ae6916a7fbb9 spi: sun4i: disable clocks in the remove function
-b9be2b8c2f88 509: fix printing uninitialized stack memory when OID is empty
-041713a3981f btrfs: Fix possible off-by-one in btrfs_search_path_in_tree
-c8cd1151f874 net_sched: red: Avoid illegal values
-a5f3a68ab6c5 net_sched: red: Avoid devision by zero
-f893770a80d3 gianfar: fix a flooded alignment reports because of padding issue.
-2e8276cf2a57 s390/dasd: prevent prefix I/O error
-a88172576934 powerpc/perf: Fix oops when grouping different pmu events
-4c68591df028 scripts/kernel-doc: Don't fail with status != 0 if error encountered with -none
-cc8a366dee34 media: s5k6aa: describe some function parameters
-06f4b8ea9330 perf bench numa: Fixup discontiguous/sparse numa nodes
-099b6d2564e8 perf top: Fix window dimensions change handling
-d626a434606e ARM: dts: am4372: Correct the interrupts_properties of McASP
-955d3a6ab928 ARM: AM33xx: PRM: Remove am33xx_pwrdm_read_prev_pwrst function
-81b772a03630 usb: build drivers/usb/common/ when USB_SUPPORT is set
-6d8204e95301 usbip: keep usbip_device sockfd state in sync with tcp_socket
-d8f831796950 dn_getsockoptdecnet: move nf_{get/set}sockopt outside sock lock
-5a23cbf20cfd video: fbdev/mmp: add MODULE_LICENSE
-ccfba658a094 ASoC: ux500: add MODULE_LICENSE tag
-e1c937eb5f6f selinux: ensure the context is NUL terminated in security_context_to_sid_core()
-9b4fa3e17ea2 Provide a function to create a NUL-terminated string from unterminated data
-061f202ba033 net: avoid skb_warn_bad_offload on IS_ERR
-d895f512c8fd netfilter: xt_RATEEST: acquire xt_rateest_mutex for hash insert
-b227264941de netfilter: on sockopt() acquire sock lock only in the required scope
-9262633996e5 netfilter: ipt_CLUSTERIP: fix out-of-bounds accesses in clusterip_tg_check()
-ebf26a2c5e7c netfilter: x_tables: avoid out-of-bounds reads in xt_request_find_{match|target}
-6d12359c0285 netfilter: x_tables: fix int overflow in xt_alloc_table_info()
-e65dfd4286b9 crypto: x86/twofish-3way - Fix %rbp usage
-acc6c6922504 selinux: skip bounded transition processing if the policy isn't loaded
-14348e089246 xfrm: check id proto in validate_tmpl()
-4dd12020ea75 mm,vmscan: Make unregister_shrinker() no-op if register_shrinker() failed.
-265f4cacb534 media: r820t: fix r820t_write_reg for KASAN
-552e91f42289 ARM: dts: s5pv210: add interrupt-parent for ohci
-b18023a9feeb ALSA: seq: Fix racy pool initializations
-d3845a59aa0b Btrfs: fix crash due to not cleaning up tree log block's dirty bits
-70322ab7f0c8 Btrfs: fix deadlock in run_delalloc_nocow
-202ea5bdef01 console/dummy: leave .con_font_get set to NULL
-af9f79d986a4 video: fbdev: atmel_lcdfb: fix display-timings lookup
-f1995f06c57b ext4: correct documentation for grpid mount option
-fd89b2d39458 ext4: save error to disk in __ext4_grp_locked_error()
-62d6c2ed8dc9 drm/radeon: adjust tested variable
-d449ee5c3c9a ALSA: seq: Fix regression by incorrect ioctl_mutex usages
-9d126820395b arm: spear13xx: Fix spics gpio controller's warning
-c258a50ab410 arm: spear13xx: Fix dmas cells
-da855af955ce arm: spear600: Add missing interrupt-parent of rtc
-d72d7516e55c s390: fix handling of -1 in set{,fs}[gu]id16 syscalls
-bc467ee4feb7 PM / devfreq: Propagate error from devfreq_add_device()
-f10dd323d82e IB/mlx4: Fix incorrectly releasing steerable UD QPs when have only ETH ports
-e8d2c9b71f76 silence goodix fingerprint spam
-91503307b46b x2: dts: Remove pingpong-split from Truly-pvt.dtsi
-3af772863249 leeco: fork msm8996-mtp.dtsi
-5876cf6aa231 zl1/x2: properly define wsa properties
-73e4c264eb2f HACK: arm64: add CNTPCT_EL0 trap handler
-
-   * lineage-sdk/
-0be4760 Revert "lineage-sdk: Update the way OMS records details about overlays"
-
-   * packages/apps/LineageParts/
-4c6326a Revert "LineageParts: Update the way OMS records details about overlays"
-
-   * system/core/
-cb7771feb Merge branch 'lineage-15.1' of https://github.com/LineageOS/android_system_core into oreo
-418b50f53 adb: host: Provide better sideload status
 
