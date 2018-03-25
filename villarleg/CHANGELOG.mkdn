@@ -3,15 +3,106 @@
 
 
 ====================
-     03-20-2018
+     03-25-2018
 ====================
 
 
-   * bootable/recovery/
-ea68ce9c add sload.f2fs for recovery format
-ed0546e9 root: Fix an issue when volume length from fs_mgr is negative.
-8afef8c1 recovery: format f2fs with encrypt/quota
-312e0e7b Integer overflow observed while formatting volume
+   * device/leeco/msm8996-common/
+26622d1 msm8996: init: don't try to set read_ahead_kb on non-existing nodes
+3213794 msm8996-common: Add x2 camera sysfs flash paths
+
+   * device/leeco/zl1/
+ce2c701 NFC: don't be verbose
+4b84d61 clean up unused cmdline parameters
+
+   * frameworks/av/
+ffd2754f9 camera: Only link and use vendor.qti.hardware.camera.device if specified
+
+   * kernel/leeco/msm8996/
+9905e70539c8 leeco: add qcom,battery-data to pmi8994_charger
+7add79fcca0e zl1: enable BFQ and regenerate defconfig
+00a6ed35cf31 block, bfq: add Early Queue Merge (EQM) to BFQ-v7r8 for 3.18.0
+c5e310de21d7 block: introduce the BFQ-v7r8 I/O sched for 3.18.0
+d8771f524296 block: cgroups, kconfig, build bits for BFQ-v7r8-3.18.0
+17560e34ef0d zl1/x2: regen defconfigs
+e066d66c8aa7 qcacld: update from LA.UM.6.5.r1-06700-8x96.0
+692e053db036 Merge tag 'LA.UM.6.5.r1-06700-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into lineage-15.1
+
+   * vendor/rr/
+4c7d756c soong: Add TARGET_USES_QTI_CAMERA_DEVICE
+
+====================
+     03-24-2018
+====================
+
+
+   * frameworks/av/
+8a6a2c381 Camera: CameraHardwareInterface changes to support Extended FD
+
+   * hardware/interfaces/
+c20158f9 camera: Only link and use vendor.qti.hardware.camera.device if specified
+
+   * system/extras/
+9f2a027a Perfprofd: Fix service definition
+
+====================
+     03-23-2018
+====================
+
+
+   * external/bash/
+35cebb9 bashrc: change cm to lineage
+
+   * packages/apps/DUI/
+fdd1279 Fix potential Smartbar FC for buttons custom application
+aef4ed1 Fix Pulse disappearing sometimes after skipping tracks
+f11893e Pulse: don't elaborate useless waveform
+2b85973 Fix smartbar media arrows not showing sometimes
+
+   * vendor/rr/
+f542fd42 Merge changes from Lineage OS (#111)
+
+====================
+     03-22-2018
+====================
+
+
+   * packages/apps/LockClock/
+918094f LockClock: explicitly include android support libs
+
+   * packages/apps/Profiles/
+f84a40f Profiles: explicitly include android support libs
+
+   * packages/providers/WeatherProvider/
+4d3d407 WeatherProvider: explicitly include android support libs
+
+   * system/vold/
+5928eba Revert "vold: Add path to cryptfs_hw"
+
+====================
+     03-21-2018
+====================
+
+
+   * external/bash/
+a4e7995 bashrc: remove resize and ps alias
+
+   * frameworks/base/
+
+   * lineage-sdk/
+
+   * packages/apps/DUI/
+
+   * packages/apps/ResurrectionOTA/
+
+   * packages/apps/Settings/
+
+   * packages/services/OmniJaws/
+
+====================
+     03-20-2018
+====================
+
 
    * device/leeco/msm8996-common/
 6e6c9ba msm8996: selinux: fix bt denial
@@ -22,101 +113,35 @@ f902ddd msm8996: selinux: cleanup block device labels
 fbbe258 Revert "zl1: audio: add reference path for ec"
 47afd43 zl1: audio: fix acdb id's for bluetooth mic
 
+   * packages/apps/EmergencyInfo/
+6d4e4e4 EmergencyInfo: support night mode
+
    * packages/apps/Settings/
 7e73912cfa Add Samsung Galaxy S6 (zerofltexx) (#936)
-
-   * system/vold/
-edd18db minivold: Use libblkid for readMetadata
 
 ====================
      03-19-2018
 ====================
 
 
+   * bootable/recovery/
+ea68ce9c add sload.f2fs for recovery format
+ed0546e9 root: Fix an issue when volume length from fs_mgr is negative.
+8afef8c1 recovery: format f2fs with encrypt/quota
+312e0e7b Integer overflow observed while formatting volume
+
    * external/unrar/
 a13960a unrar: Fix compile errors with clang
 
    * hardware/qcom/power/
+d3eb25f power: Depend on vendor lineage power HAL
 047cb66 power: Allow devices to write their own platform specific bits
 
-====================
-     03-18-2018
-====================
-
-
-   * hardware/qcom/fm/
-6ca6a20 libfm_jni: Ignore unused parameters from APIs
-944fa04 libfm_jni: Resolve FM_DEVICE_PATH R/O open flag
-abc6047 libfm_jni: Resolve fread assignment to condition cast
-76d61cf libfm_jni: Remove unused variables
-
-====================
-     03-17-2018
-====================
-
-
-   * frameworks/base/
-
-   * hardware/qcom/display/
-1aa43a5fa msm8974: libexternal should depend on libmedia
-ef4ddf0f4 msm8974: libgralloc: Fix adding offset to the mapped base address
-
-   * lineage-sdk/
-
-   * packages/apps/DUI/
-
-   * packages/apps/LineageParts/
-
-   * packages/apps/ResurrectionOTA/
-
-   * packages/apps/Settings/
-
-   * packages/apps/Snap/
-9b0c005c1 Snap: Configure focus ring preview dimensions
-b2ef15eda Snap: Add support for focus distance
-4bdfff2c9 Drop new focus indicator into Camera2.
-
-   * packages/services/OmniJaws/
-
-====================
-     03-16-2018
-====================
-
-
-   * hardware/qcom/audio/default/
-6ec0a5e12 audio: Make CVD version retrieval nonfatal with ACDB v1
-
-   * hardware/qcom/display/
-86a2c326b msm8974: hwcomposer: Fix regression in hwc_sync
-
-====================
-     03-15-2018
-====================
-
-
-   * build/make/
-c37a57b96 Revert "[TEMP] Disable Script enhancments & fix build"
-
-   * hardware/qcom/audio-caf/msm8952/
-5dd29ee02 Revert "hal: Fix failure in VtsHalAudioV2_0Target test due to spkr protection"
-
-   * kernel/leeco/msm8996/
-705f09f46fa Convert few critical drivers to use msecs_to_jiffies insted of HZ
-8be52618461 Revert "smbcharger: import leeco changes for zl1"
+   * packages/apps/Contacts/
+d7981a1c7 Contacts: update splash screen to match the new icon
+a4e8ed26f Place EmergencyInfo shortcut on drawer
+7f3c3a32b Automatically set SIM number to my profile
 
    * system/vold/
-20d950c vold: Also wait for dm device when mounting private volume
-
-   * vendor/rr/
-4abddb01 Add properties for build flash info script
-
-====================
-     03-14-2018
-====================
-
-
-   * vendor/rr/
-65035af5 Merge pull request #110 from BlackDeaths/oreo
-026cc03e Update DocumentsUI overlay for Oreo
-1bff328d lineage: fix sdk documentation generation
+edd18db minivold: Use libblkid for readMetadata
 
