@@ -3,6 +3,641 @@
 
 
 ====================
+     04-23-2018
+====================
+
+
+   * device/leeco/msm8996-common/
+da8b8c4 msm8996: Update SDM from LA.UM.6.4.r1-07400-8x98.0
+72f4124 msm8996: Build LiveDisplay HAL
+154f89b msm8996: Pin modified qti_libpermissions.xml
+41bf58c x2: add le_x2_india (LEX821) to init
+61a9640 msm8996: Enable quota for /data and set some flags
+11cb20d msm8996: add support for f2fs
+e1323e9 msm8996: Increase vibration pattern strength
+
+   * device/leeco/zl1/
+482422c zl1: #NeverSettleForOnePlus
+
+   * hardware/lineage/lineagehw/
+ed11fda lineagehw: Link livedisplay library statically
+
+   * kernel/leeco/msm8996/
+8acfbb167295 qcacld-2.0: Disable CONFIG_WLAN_THERMAL_SHUTDOWN
+f363f03dacd0 Linux 3.18.101
+69d0c8fab055 scsi: sg: only check for dxfer_len greater than 256M
+a8aaa225eb95 scsi: sg: fix static checker warning in sg_is_valid_dxfer
+777a1268c06c scsi: sg: fix SG_DXFER_FROM_DEV transfers
+5f5c53f00c6d fs/aio: Use RCU accessors for kioctx_table->table[]
+ebc1c967f87b fs/aio: Add explicit RCU grace period when freeing kioctx
+dab7f50d1db0 lock_parent() needs to recheck if dentry got __dentry_kill'ed under it
+98aaf623e086 ALSA: seq: Clear client entry before deleting else at closing
+b8d6b02fbe3a ALSA: seq: Fix possible UAF in snd_seq_check_queue()
+ea3100a8b1c2 ALSA: pcm: Fix UAF in snd_pcm_oss_get_formats()
+8ab7b41ba6b2 ima: relax requiring a file signature for new files with zero length
+96def6c3409a rcutorture/configinit: Fix build directory error message
+dda1ca477b39 ASoC: nuc900: Fix a loop timeout test
+355e4ecc8e9c mac80211: remove BUG() when interface type is invalid
+de14f5f77866 veth: set peer GSO values
+52ad11d63620 media: cpia2: Fix a couple off by one bugs
+86d89dd23517 scsi: devinfo: apply to HP XP the same flags as Hitachi VSP
+48e264eb51c6 spi: sun6i: disable/unprepare clocks on remove
+4bf507ff9416 tools/usbip: fixes build with musl libc toolchain
+870f40cd28cd ARM: dts: omap3-n900: Fix the audio CODEC's reset pin
+65799c782ffb ARM: dts: am335x-pepper: Fix the audio CODEC's reset pin
+5abd2011f0a9 mtd: nand: fix interpretation of NAND_CMD_NONE in nand_command[_lp]()
+9a162a379cda net: xfrm: allow clearing socket xfrm policies.
+49aa6eee1ad5 sched: Stop resched_cpu() from sending IPIs to offline CPUs
+a6a52c4fcd76 HID: elo: clear BTN_LEFT mapping
+681396b6ce6c wil6210: fix memory access violation in wil_memcpy_from/toio_32
+c635084d26bb kprobes/x86: Set kprobes pages read-only
+726eca05360c kprobes/x86: Fix kprobe-booster not to boost far call instructions
+8287d7dd0a8a scsi: sg: close race condition in sg_remove_sfp_usercontext()
+379caccb389c scsi: sg: check for valid direction before starting the request
+a79c1b0800bd perf session: Don't rely on evlist in pipe mode
+b8100a47f60d perf inject: Copy events when reordering events in pipe mode
+4a5b1e15c931 usb: gadget: dummy_hcd: Fix wrong power status bit clear/reset in dummy_hub_control()
+fe796312205e regulator: isl9305: fix array size
+a4a60b1284bb MIPS: BPF: Quit clobbering callee saved registers in JIT code.
+5f066a3475b2 drm/radeon: Fail fb creation from imported dma-bufs.
+99e7c2343570 video: ARM CLCD: fix dma allocation size
+6517b2cb2991 iommu/iova: Fix underflow bug in __alloc_and_insert_iova_range
+da01b1cc5687 apparmor: Make path_max parameter readonly
+051ad3f5cf1e fm10k: correctly check if interface is removed
+4808f324dd6e reiserfs: Make cancel_old_flush() reliable
+b4cc6c61c92e net/faraday: Add missing include of of.h
+6a69199ecd94 powerpc: Avoid taking a data miss on every userspace instruction miss
+2dcd23f78aab ARM: dts: r8a7791: Correct parent of SSI[0-9] clocks
+7d85bce003a4 ARM: dts: r8a7790: Correct parent of SSI[0-9] clocks
+15df8f87a7e8 braille-console: Fix value returned by _braille_console_setup
+05ba7f96d703 blk-throttle: make sure expire time isn't too big
+f55d47f653ec mm: Fix false-positive VM_BUG_ON() in page_cache_{get,add}_speculative()
+5ffb5442a1db tcp: sysctl: Fix a race to avoid unexpected 0 window from space
+13d14951d416 spi: omap2-mcspi: poll OMAP2_MCSPI_CHSTAT_RXS for PIO transfer
+9099793506d7 sched: act_csum: don't mangle TCP and UDP GSO packets
+1d4eff0646bc timers, sched_clock: Update timeout for clock wrap
+31b3af683087 media: i2c/soc_camera: fix ov6650 sensor getting wrong clock
+c97a516bc9cc scsi: ipr: Fix missed EH wakeup
+69f4fdfdbba5 of: fix of_device_get_modalias returned length when truncating buffers
+39a7eedd78ac batman-adv: handle race condition for claims between gateways
+22b6ad59fe43 ARM: dts: Adjust moxart IRQ controller and flags
+fbf614a1c2ab HID: clamp input to logical range if no null state
+52d10f180582 ath10k: disallow DFS simulation if DFS channel is not enabled
+846567147ffc drm: Defer disabling the vblank IRQ until the next interrupt (for instant-off)
+bc71072747cc drivers: net: xgene: Fix hardware checksum setting
+57ede251520c perf tools: Make perf_event__synthesize_mmap_events() scale
+f4540223f655 selinux: check for address length in selinux_socket_bind()
+93d556e4b38f PCI/MSI: Stop disabling MSI/MSI-X in pci_device_shutdown()
+3864b3c7312d HID: reject input outside logical range only if null state is set
+201b3b442d67 Input: tsc2007 - check for presence and power down tsc2007 during probe
+f36c322369a5 Linux 3.18.100
+95613f607932 fixup: sctp: verify size of a new chunk in _sctp_make_chunk()
+117e9b6e6987 serial: 8250_pci: Add Brainboxes UC-260 4 port serial device
+1df3a874906c usb: usbmon: Read text within supplied buffer size
+984ca3e59fe0 USB: usbmon: remove assignment from IS_ERR argument
+53f5fc4af3b1 usb: quirks: add control message delay for 1b1c:1b20
+f8d32be84404 staging: android: ashmem: Fix lockdep issue during llseek
+ffe0e9abaaa9 uas: fix comparison for error code
+1cdb39c85b12 tty/serial: atmel: add new version check for usart
+b0a1d5b4d035 serial: sh-sci: prevent lockup on full TTY buffers
+ed6760db4adc x86: Treat R_X86_64_PLT32 as R_X86_64_PC32
+a6fdb9451c3e x86/module: Detect and skip invalid relocations
+50cb37d71d3b scripts: recordmcount: break hardlinks
+874d6ad84a3e ubi: Fix race condition between ubi volume creation and udev
+73581102f7d5 netfilter: ipv6: fix use-after-free Write in nf_nat_ipv6_manip_pkt
+6edb2802ff26 netfilter: bridge: ebt_among: add missing match size checks
+cd55a9dd058c netfilter: ebtables: CONFIG_COMPAT: don't trust userland offsets
+b7dcb6821d30 netfilter: IDLETIMER: be syzkaller friendly
+8a437a233a17 netfilter: nat: cope with negative port range
+877e3f61a6c1 netfilter: x_tables: fix missing timer initialization in xt_LED
+e34430b90ea8 ALSA: seq: More protection for concurrent write and ioctl races
+9e6324967bdd ALSA: seq: Don't allow resizing pool in use
+a4a6df56f7f3 x86/MCE: Serialize sysfs changes
+630919ef1888 Input: matrix_keypad - fix race when disabling interrupts
+5a26bf317ed0 MIPS: BMIPS: Do not mask IPIs during suspend
+158051ea5789 scsi: qla2xxx: Fix NULL pointer crash due to active timer for ABTS
+668847fa69ab Linux 3.18.99
+62248ef75c4e dm io: fix duplicate bio completion due to missing ref count
+741345b21671 fib_semantics: Don't match route with mismatching tclassid
+0137290205f4 net: ipv4: don't allow setting net.ipv4.route.min_pmtu below 68
+e588084043ae sctp: verify size of a new chunk in _sctp_make_chunk()
+72c06517e9b4 s390/qeth: fix IPA command submission race
+3a9ed5dac551 s390/qeth: fix SETIP command handling
+d630bfed1db1 sctp: fix dst refcnt leak in sctp_v6_get_dst()
+06b27cea68b4 udplite: fix partial checksum initialization
+f486b0c1a155 ppp: prevent unregistered channels from connecting to PPP units
+39e6480fc890 netlink: ensure to loop over all netns in genlmsg_multicast_allns()
+3d67f9670914 net: fix race on decreasing number of TX queues
+c8caf73a05de ipv6 sit: work around bogus gcc-8 -Wrestrict warning
+37dddb7b18f2 hdlc_ppp: carrier detect ok, don't turn off negotiation
+8cf008a7c1fd bridge: check brport attr show in brport_show
+40efb142bef5 leds: do not overflow sysfs buffer in led_trigger_show
+fb5d2449fcf9 net: fec: introduce fec_ptp_stop and use in probe fail path
+2400dd975f23 ARM: mvebu: Fix broken PL310_ERRATA_753970 selects
+3add700f5342 cpufreq: s3c24xx: Fix broken s3c_cpufreq_init()
+7464bef13272 ALSA: usb-audio: Add a quirck for B&W PX headphones
+96645ae181aa tpm_i2c_nuvoton: fix potential buffer overruns caused by bit glitches on the bus
+88cc2b53c118 tpm_i2c_infineon: fix potential buffer overruns caused by bit glitches on the bus
+f92bbe58db3e Linux 3.18.98
+086f352d1303 net: gianfar_ptp: move set_fipers() to spinlock protecting area
+c14a59e5e966 sctp: make use of pre-calculated len
+90a6e8222395 xen/gntdev: Fix partial gntdev_mmap() cleanup
+622bf40f1cd8 xen/gntdev: Fix off-by-one error when unmapping with holes
+5fbaacb36979 SolutionEngine771x: fix Ether platform data
+0a46486624f7 mdio-sun4i: Fix a memory leak
+6edb91bb22b3 xen-netfront: enable device after manual module load
+1f66635fb1fe drm/ttm: check the return value of kzalloc
+b23d49c50e12 e1000: fix disabling already-disabled warning
+19286540c9e0 xfs: quota: check result of register_shrinker()
+a799867c4700 xfs: quota: fix missed destroy of qi_tree_lock
+bcc65cbfdc69 s390/dasd: fix wrongly assigned configuration data
+ee21ee53cd02 led: core: Fix brightness setting when setting delay_off=0
+c8c3fe405cb5 bnx2x: Improve reliability in case of nested PCI errors
+fda53240e4de tg3: Enable PHY reset in MTU change path for 5720
+cdfd43959328 tg3: Add workaround to restrict 5762 MRRS to 2048
+59da62f439e6 scsi: storvsc: Fix scsi_cmd error assignments in storvsc_handle_error
+267140999374 net: arc_emac: fix arc_emac_rx() error paths
+36bbca082787 spi: atmel: fixed spin_lock usage inside atmel_spi_remove
+6a01cf7779f3 sget(): handle failures of register_shrinker()
+4c59dac080d9 ipv6: icmp6: Allow icmp messages to be looped back
+c8a393bb0c20 mtd: nand: gpmi: Fix failure when a erased page has a bitflip at BBM
+23ff0c4191ed hrtimer: Ensure POSIX compliance (relative CLOCK_REALTIME hrtimers)
+3ae0ce530a1b ipv6: Skip XFRM lookup if dst_entry in socket cache is valid
+7d3e20947aaa Linux 3.18.97
+f70acf09427d ASN.1: fix out-of-bounds read when parsing indefinite length item
+ff653978fce3 usb: gadget: f_fs: Process all descriptors during bind
+3281a25bc821 usb: dwc3: gadget: Set maxpacket size for ep0 IN
+f55bb68c3da5 arm64: Disable unhandled signal log messages by default
+61a45b9251b3 irqchip/gic-v3: Use wmb() instead of smb_wmb() in gic_raise_softirq()
+99ebd1133bd5 x86/oprofile: Fix bogus GCC-8 warning in nmi_setup()
+2810c12da3f7 iio: adis_lib: Initialize trigger before requesting interrupt
+54cd8b608f87 iio: buffer: check if a buffer has been set up when poll is called
+d5097e162389 cfg80211: fix cfg80211_beacon_dup
+91ee63a79c28 scsi: ibmvfc: fix misdefined reserved field in ibmvfc_fcp_rsp_info
+0c463a8b654d PCI: keystone: Fix interrupt-controller-node lookup
+6af3467492bb netfilter: drop outermost socket lock in getsockopt()
+0ff4c23619f6 usb-core: Add LINEAR_FRAME_INTR_BINTERVAL USB quirk
+6e72e714455c Revert "USB: f_fs: Use HS and SS descriptors without checking gadget speed"
+65791c51c84a x2/zl1: Enable quota support for faster storage stats
+7c1e606d8686 x2: enable BFQ, make it default and regen defconfig
+a2f357c2c3dc zl1/x2: enable F2FS and regenerate defconfigs
+2c9c99d24c95 f2fs: don't put dentry page in pagecache into highmem
+5cfaff0586b4 f2fs: support inode creation time
+11f307f2795a f2fs: rebuild sit page from sit info in mem
+e39a35087ea2 f2fs: stop issuing discard if fs is readonly
+33bfd8630482 f2fs: clean up duplicated assignment in init_discard_policy
+d2809fd03ab3 f2fs: use GFP_F2FS_ZERO for cleanup
+92d277606ec1 f2fs: allow to recover node blocks given updated checkpoint
+2bd836c5c084 f2fs: recover some i_inline flags
+a4b907db5d05 f2fs: correct removexattr behavior for null valued extended attribute
+e9ce28cb6207 f2fs: drop page cache after fs shutdown
+003f919c0aa4 f2fs: stop gc/discard thread after fs shutdown
+49e6250edeca f2fs: hanlde error case in f2fs_ioc_shutdown
+d78554f127a0 f2fs: split need_inplace_update
+1facff15a3b7 f2fs: fix to update last_disk_size correctly
+c799b87e2c47 f2fs: kill F2FS_INLINE_XATTR_ADDRS for cleanup
+00e03dd019b6 f2fs: clean up error path of fill_super
+002651cba5a2 f2fs: avoid hungtask when GC encrypted block if io_bits is set
+34a576cdaf49 f2fs: allow quota to use reserved blocks
+2338e3c0d56c f2fs: fix to drop all inmem pages correctly
+7df50402ca6a f2fs: speed up defragment on sparse file
+aa4109795cd5 f2fs: support F2FS_IOC_PRECACHE_EXTENTS
+3e51b473e677 f2fs: add an ioctl to disable GC for specific file
+bdd64f4441fa f2fs: prevent newly created inode from being dirtied incorrectly
+6f1954c788df f2fs: support FIEMAP_FLAG_XATTR
+13f9775d5fd4 f2fs: fix to cover f2fs_inline_data_fiemap with inode_lock
+6daeff03fbfe f2fs: check node page again in write end io
+a049dbf341f5 f2fs: fix to caclulate required free section correctly
+bd2ef2f055e5 f2fs: handle newly created page when revoking inmem pages
+cc951f8ec115 f2fs: add resgid and resuid to reserve root blocks
+135d7e98163c f2fs: implement cgroup writeback support
+612860a425e3 f2fs: remove unused pend_list_tag
+cb9b65a39b64 f2fs: avoid high cpu usage in discard thread
+797982ab7ce2 f2fs: make local functions static
+213f6204bccc f2fs: add reserved blocks for root user
+1dc312f1da21 f2fs: check segment type in __f2fs_replace_block
+758667c78bce f2fs: update inode info to inode page for new file
+6b5d96853625 f2fs: show precise # of blocks that user/root can use
+2600d9289f7e f2fs: clean up unneeded declaration
+042553def14f f2fs: continue to do direct IO if we only preallocate partial blocks
+178eee597c7d f2fs: enable quota at remount from r to w
+16639e419a0c f2fs: skip stop_checkpoint for user data writes
+d6b107314242 f2fs: fix missing error number for xattr operation
+30dbd0313b5d f2fs: recover directory operations by fsync
+d4d58b113b71 f2fs: return error during fill_super
+fe92e1e88646 f2fs: fix an error case of missing update inode page
+6856308beac6 f2fs: fix potential hangtask in f2fs_trace_pid
+500fe4a7d77d f2fs: no need return value in restore summary process
+94bdd98b6814 f2fs: use unlikely for release case
+ff047dfdb625 f2fs: don't return value in truncate_data_blocks_range
+a8b3c1059e05 f2fs: clean up f2fs_map_blocks
+8841bc3593e2 f2fs: clean up hash codes
+5b3d45f751b2 f2fs: fix error handling in fill_super
+ea19bca11544 f2fs: spread f2fs_k{m,z}alloc
+b1741f026802 f2fs: inject fault to kvmalloc
+2e678fe48734 f2fs: inject fault to kzalloc
+d99037459109 f2fs: remove a redundant conditional expression
+5f2c10882d50 f2fs: apply write hints to select the type of segment for direct write
+424a7df4859c f2fs: switch to fscrypt_prepare_setattr()
+515c3fc6f644 f2fs: switch to fscrypt_prepare_lookup()
+3af308cebe2a f2fs: switch to fscrypt_prepare_rename()
+bd022c49d661 f2fs: switch to fscrypt_prepare_link()
+4c3977a62292 f2fs: switch to fscrypt_file_open()
+4bd97acb68ef f2fs: remove repeated f2fs_bug_on
+0d2f5190f227 f2fs: remove an excess variable
+acf224b8b1a9 f2fs: fix lock dependency in between dio_rwsem & i_mmap_sem
+abf65b3ee11a f2fs: remove unused parameter
+51a4c9a46700 f2fs: still write data if preallocate only partial blocks
+77659d594af7 f2fs: do not preallocate blocks which has wrong buffer
+ef54441e5456 f2fs: introduce sysfs readdir_ra to readahead inode block in readdir
+a0f228ab80d3 f2fs: fix concurrent problem for updating free bitmap
+d868d44bbb82 f2fs: remove unneeded memory footprint accounting
+5a0d6fd2bc0b f2fs: no need to read nat block if nat_block_bitmap is set
+775c6451b33a f2fs: reserve nid resource for quota sysfile
+66d266a35184 fscrypt: resolve some cherry-pick bugs
+ed1203229069 fscrypt: move to generic async completion
+ca5dbf883b41 crypto: introduce crypto wait for async op
+d4ed18deeeb1 fscrypt: lock mutex before checking for bounce page pool
+acca64f17bd1 fscrypt: new helper function - fscrypt_prepare_setattr()
+4b22c0bc1515 fscrypt: new helper function - fscrypt_prepare_lookup()
+dd2101988e8d fscrypt: new helper function - fscrypt_prepare_rename()
+16bb9587e0ff fscrypt: new helper function - fscrypt_prepare_link()
+6225b3991c1f fscrypt: new helper function - fscrypt_file_open()
+1fb2b84af481 fscrypt: new helper function - fscrypt_require_key()
+ee82e7ae938b fscrypt: remove unneeded empty fscrypt_operations structs
+39291ebc335e fscrypt: remove ->is_encrypted()
+b0f25d61e29a fscrypt: switch from ->is_encrypted() to IS_ENCRYPTED()
+6b4d73431664 fs, fscrypt: add an S_ENCRYPTED inode flag
+af1b890c1abe fscrypt: clean up include file mess
+6f81fb3ba871 fscrypt: fix dereference of NULL user_key_payload
+f10e2a9e6869 fscrypt: make ->dummy_context() return bool
+691e18787e2c video: mdss: Fix dual-DSI issue in LiveDisplay
+
+   * packages/apps/Settings/
+ecdb6e713a Add Samsung S9 (starlte)
+
+   * vendor/leeco/
+2d97cc9 msm8996: Update SDM from LA.UM.6.4.r1-07400-8x98.0
+08982c9 x2: Regen Makefiles
+66875ef msm8996: Allow qcrilmsgtunnel to access android.hidl.manager
+654f083 x2: Move remainder of firmware files to vendor
+019e0de x2: update Adreno 530 firmware files
+a1ee81e x2: imx230 camera updates
+6361a3f x2: Update some files from x2 28s
+ab7f02c x2: Cleanup vendor blobs
+d9b3038 s2: lineage-15.1 bring-up
+
+====================
+     04-22-2018
+====================
+
+   * android/
+b82fc71 manifest: Remove LiveDisplay repo
+
+   * build/make/
+7615a5909 Add build.prop to incrementals too
+825cdc4bb build: allow forcing build of otatools
+
+   * device/qcom/sepolicy/
+d9c24de Merge branch 'lineage-15.1' into oreo
+
+   * device/rr/sepolicy/
+fb968d7 Merge branch 'lineage-15.1' into oreo
+bc582cd Allow recovery write to sysfs_graphics
+590946d Remove adb.secure recovery property context
+20b9d1c sepolicy: Add rules for LiveDisplay HIDL HAL
+98c7f8d Allow recovery write to sysfs_graphics
+541bcf2 Remove adb.secure recovery property context
+
+   * frameworks/base/
+
+   * lineage-sdk/
+a395cc3 lineage-sdk: Allow adjusting brightness of non-RGB LEDs
+
+   * packages/apps/DUI/
+
+   * packages/apps/LineageParts/
+d2ff5e5 LineageParts: Allow adjusting brightness of non-RGB LEDs
+d7a5830 LineageParts: Fix loading default colors for non-RGB lights
+f10570a LineageParts: Fix removing LED brightness settings
+
+   * packages/apps/ResurrectionOTA/
+
+   * packages/apps/Settings/
+11067f4db6 Add S6 Edge (zeroltexx)
+
+   * packages/apps/Snap/
+a0f6bf7b8 Fix snapshot failed with logical camera
+a83f85c30 Add ui toast for bokeh
+
+   * system/core/
+695642238 Merge branch 'lineage-15.1' into oreo
+
+   * vendor/nxp/opensource/external/libnfc-nci/
+f48a623 Fix description path for libnqp61-jcop-kit and move to vendor
+
+   * vendor/rr/
+3eae19cc envsetup: Fix lineageremote for caf    *s
+261cb47c lineage-radio: disable ims services on ro.radio.noril
+33c8d934 build: kernel: Use LLVM_PREBUILTS_VERSION if no version is specified
+58dd6f94 lineage: enable building otatools with generic targets
+
+====================
+     04-21-2018
+====================
+
+
+   * bootable/recovery/
+0c08e7ce recovery: Fix loading time from /persist
+c7ec3a79 recovery: Don't try to set ro.adb.secure
+36dd1397 Revert "updater: Fix and improve allowing devices to suppress BLKDISCARD"
+
+   * device/qcom/sepolicy/
+be44088 legacy: Consistent indentation
+fe8868a legacy: Address mm-pp-daemon denials
+4504f04 legacy: Allow thermal-engine to read sysfs_spmi_dev
+4dd1cb2 legacy: Add debugfs rules for rmt_storage
+75573bd legacy: Allow hal_graphics_allocator_default access sysfs_graphics
+e8e4723 legacy: Allow hal_graphics_composer_default read firmware
+103e1dc legacy: Allow bluetooth_loader read persist
+443c0d8 legacy: Address perfd denials
+c51e127 legacy: Allow perfd write to sysfs_kgsl
+d233d17 legacy: Allow qcom power HAL to interact with perfd
+6bf41a0 hal_gnss_default: Do not log udp socket failures
+4b4dd9c sepolicy: Ignore more hal_memtrack denials
+9110cac sepolicy : add secontext for eMMC blocks
+d7045fa sepolicy: rules to allow camera daemon access to app buffer
+00dc45f sepolicy: Fix warnings related to set_prop
+
+   * vendor/nxp/opensource/packages/apps/Nfc/
+ffaea6aa Look for libnqp61-jcop-kit.so in the vendor
+
+====================
+     04-20-2018
+====================
+
+
+   * external/openssh/
+1ad2147 Don't crash when pw_passwd is not set
+
+   * packages/apps/Dialer/
+
+   * packages/apps/FMRadio/
+
+   * packages/apps/Recorder/
+
+   * packages/apps/Snap/
+
+====================
+     04-19-2018
+====================
+
+
+   * hardware/lineage/interfaces/
+5f8e56a lineage/interfaces: Add IColor SDM backend implementation
+
+   * hardware/qcom/display-caf/msm8974/
+060e6fe28 libvirtual should depend on libmedia
+b9109c1b8 Revert "libvirtual: Add libbase static library dependency"
+
+====================
+     04-18-2018
+====================
+
+
+   * hardware/qcom/display-caf/apq8084/
+c59714ba7 Add -Wno-error to compile with global -Werror.
+ed267b8d3 Fix -Wmacro-redefined werror issues.
+39eb2094e hwc: Start with ROI set to destination
+04487f72a libgralloc: Align secure video and rotator buffers to 2M
+dcabbfca9 libvirtual should depend on libmedia
+bee7c812b gralloc: Handle RAW_OPAQUE formats similar to blob
+5cd994c69 Fix duplicate copy file rules
+a79fb6377 qservice: Allow camera server to call into HWC
+
+   * system/core/
+73c15af2d Revert "Don't enable ADB by default when ro.adb.secure is 1"
+
+====================
+     04-17-2018
+====================
+
+   * android/
+8f46c5e lineage: Track our own openssh repo
+
+   * frameworks/base/
+6fb5a705e8a settings: Allow accessing LineageSettings via settings command
+4dad570b6a4 frameworks/base: Support for third party NFC features and extensions
+2de1bbac502 Keyguard: Allow disabling fingerprint wake-and-unlock
+de95f241316 fingerprint: notify client when cancelling succeeded
+7522061652a SettingsProvider: explicitly include android support libs
+
+   * hardware/lineage/lineagehw/
+046a670 lineagehw: Use HIDL for livedisplay vendor impl
+
+   * hardware/qcom/media-caf/apq8084/
+29e06f3f9 mm-video-v4l2: vdec: Disallow changing buffer modes/counts on allocated ports
+a42a7cda3 mm-video-v4l2: venc: Disallow changing buffer count/size on allocated port
+bda60bfca mm-video-v4l2: vidc: Add support for OMX_IndexConfigAndroidIntraRefresh
+f24ca0204 mm-video-v4l2: vdec: Add range check before native_buffer usage
+a7047b28a mm-video-v4l2: vidc: fix matching of extension strings
+eb2d7c886 mm-video-v4l2: venc: Advertise constrained profiles for AVC encoder
+f2501151c fix circular dependency libnativewindow <-> libui
+
+   * hardware/qcom/power/
+8ff509e power: Consistent skipping of non perf profile hints
+593b9d0 power: Compile with -Wall -Wextra -Werror
+11016fa power: msm8994: Add support for power profile & boost
+e555395 power: msm8992: Add support for power profile & boost
+ce25d84 power: msm8610: Add support for power profile & boost
+dbc6781 power: msm8226: Add support for power profile & boost
+32ae7b0 power: apq8084: Add support for power profile & boost
+46ac4af power: msm8916: Add support for power profile & boost
+ed3426d power: fix sysfs_read/sysfs_write usage
+158576f power: add back check for ro.vendor.extension_library
+abe7e65 power: msm8952: Minor code cleanup
+6204c67 power: msm8996: Remove dead code
+8c55d3c power: msm8974: POWER_HINT_INTERACTION improvements
+
+   * lineage-sdk/
+35cfcf8 sdk: Remove low power restrictions on color control
+c6efd51 LineageSettingsProvider: explicitly include android support libs
+7b03987 README: Point to the new wiki
+df88839 lineage-sdk: Update validators for button settings
+aa63b85 sdk: ilama API (9)
+c46556e Merge branch 'oreo' of https://github.com/ResurrectionRemix/lineage-sdk into oreo
+
+   * packages/apps/Contacts/
+d1c544e4b Hide help and feedback in AOSP contacts
+
+   * packages/apps/Gallery2/
+9c18367fd Fix Time bar don't update replay after trim
+db965e565 Fix can't enable speaker with bluetooth headset
+6aeaf8ad0 Fix null pointer when copy representantion
+
+   * packages/apps/LineageParts/
+5f15b5a Revert "LineageParts: Build with AAPT2"
+d61bd6b LineageParts: Build with AAPT2
+1f3af6f ButtonSettings: Add a toggle for button backlight only when pressed
+
+   * packages/apps/Settings/
+e5ad8ca59e Settings: use LineageHW serial number
+
+   * vendor/rr/
+bee95bc8 Fix Android "Work Profiles" also known as AfW 'Android for Work'
+dcc15fc5 apn: Add protocol for fido and rogers
+c7e26309 build: dt_image: support prebuilt DT images
+b620ca7a lineage: enable building otatools with generic targets
+
+====================
+     04-16-2018
+====================
+
+
+   * device/rr/sepolicy/
+5ebc0dc sepolicy: Add rules for LiveDisplay HIDL HAL
+
+   * frameworks/base/
+32663db20c0 Quick settings panel : Set transparency [1/2]
+de3f4687981 Fw_base - custom Toast color options (1/2)
+
+   * hardware/qcom/media-caf/apq8084/
+50725790e libc2dcolorconvert: Fix address in unmap call
+
+   * packages/apps/Settings/
+1e80584e33 minor typo in strings
+1c0e8980b7 QS panel: Set transparency [2/2]
+d5945c3b5c Settings - custom Toast color options (2/2)
+
+   * vendor/rr/
+dc91a376 bootanimation: Use 1080.zip version on lower sizes (#112)
+
+====================
+     04-15-2018
+====================
+
+
+   * frameworks/base/
+c95f3f7b073 OMS: Dismantle FLAG_OVERLAY_TRUSTED check in isOverlayPackage
+
+   * hardware/qcom/media-caf/apq8084/
+ddf4a35e5 hal: Added LOCAL_VENDOR_MODULE to set output path of the binaries
+
+   * hardware/qcom/media-caf/msm8974/
+adc438b8f mm-video-v4l2: vdec: Disallow changing buffer modes/counts on allocated ports
+2c2ca636c mm-video-v4l2: venc: Disallow changing buffer count/size on allocated port
+
+   * packages/apps/Settings/
+8dc1abc45e Update resurrection_device_maintainers_strings.xml
+
+====================
+     04-14-2018
+====================
+
+
+   * vendor/rr/
+247c7bf5 Update Features.mkdn
+
+====================
+     04-13-2018
+====================
+
+   * android/
+edf7966 manifest: Sync HVX neuralnetworks HAL
+6e7b438 lineage: Sync NXP NFC stack
+
+   * build/make/
+92459a622 core: include vendor_buildinfo.sh when TARGET_COPY_OUT_VENDOR=system
+f300b30f0 core: Dont overwrite build.prop when TARGET_COPY_OUT_VENDOR=system
+0e77d271d Install (vendor|system/vendor)/build.prop always
+3b65b173e dumpvar: Dump TARGET_USE_SDCLANG
+d54e7653c binary: Append cc/cxx wrapper to sdclang
+cacf04289 build: Require devices to opt-in for SDCLANG
+11f1cfc91 Turn off sdclang for cfi sanitizer
+49e041dfc Add support for using the secondary SDLLVM toolchain
+d45f9cceb Control building shared libs, static libs and executables with SDLLVM LTO
+39f42fba8 Add support for building with proprietary compiler
+43557b318 build: build generic lineage targets from vendor/lineage
+06d2f9dad Revert "products: make targets used for addonsu inherit from lineage"
+
+   * external/openssh/
+836dcfa Revert SSHDIR to /data/ssh
+bcbc739 _PATH_SSH_PROGRAM should point to ssh not sftp - this fixes scp
+
+   * frameworks/native/
+87e2b4280 Merge pull request #3 from Adriannemerenco/oreo
+c7735b636 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+   * hardware/qcom/audio-caf/msm8998/
+03a9477b6 Merge tag 'LA.UM.6.4.r1-07600-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into HEAD
+
+   * hardware/qcom/display-caf/msm8998/
+6ecb2ed62 Merge tag 'LA.UM.6.4.r1-07600-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/display into HEAD
+
+   * hardware/qcom/media-caf/msm8998/
+3159153cd Merge tag 'LA.UM.6.4.r1-07600-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/media into HEAD
+
+   * system/core/
+75790f6e0 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+   * system/sepolicy/
+02863ef5 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+   * vendor/rr/
+7bda2d85 rr: fix path for some stuff
+9a34260e write_makefiles: fix paths in BUILD_PREBUILT with destination
+d034b95e repopick: Allow to pick changes by URL
+fbbc8c8b repopick: Actually print the patchset number
+aa960277 repopick: Ignore the trailing slash in change numbers
+1223973f repopick: Try to keep the changes sorted
+b61f5f48 lineage: Camera2 priv-app permissions whitelist
+6ec04d19 vendor: More priv-app whitelist updates
+
+====================
+     04-12-2018
+====================
+
+
+   * hardware/qcom/audio-caf/msm8998/
+e043b4664 audio: Fixes for VNDK_VERSION=current
+1a5c4cb65 Make libqcomvoiceprocessing build with the VNDK.
+17fcdfed7 Make libqcomvisualizer build with the VNDK.
+1e3c7598c Make libqcompostprocbundle build with the VNDK.
+384873799 Build audio.primary.* with BOARD_VNDK_VERSION
+35a5ab523 Add libhardware_headers and libsystem_headers to modules
+
+   * hardware/qcom/bt-caf/
+2c5d2c5 Add missing headers to libbt-vendor
+
+   * hardware/qcom/display-caf/msm8998/
+e533c7910 Add GLESv3 as a dependency.
+a00dbd8e3 Fix libcutils private headers
+ce4ce8932 Build libqdMetaData with BOARD_VNDK_VERSION
+01b92deb2 Build lights.msm8998 with the VNDK.
+9008131a3 Use header lib instead of using global include path
+7dfb3a7d8 Mark msm8998 modules LOCAL_VENDOR_MODULE
+
+   * hardware/qcom/media-caf/msm8998/
+91db4db97 fix circular dependency libnativewindow <-> libui
+
+   * packages/apps/Settings/
+ee06de5638 Add Twitter and pitchblack links into about section
+
+====================
+     04-11-2018
+====================
+
+
+====================
+     04-10-2018
+====================
+
+
+   * frameworks/base/
+d855f821fff SystemUI: Fix QS auto brightness icon switch
+a459dbf4fab Merge branch 'oreo' of https://github.com/ResurrectionRemix/android_frameworks_base into oreo
+
+====================
      04-09-2018
 ====================
 
@@ -35,160 +670,4 @@ bf2ec868640e Revert "x2: dts: remove pingpong-split from Boe and ofilm pvt panel
    * packages/apps/Settings/
 fe4b9c00b9 Fix the reset icon tint & Dont use the alpha image. Thanx @pimpmaneaton for finding this
 0400ac94f0 Ambient Display battery toggle [2/2]
-
-====================
-     04-08-2018
-====================
-
-
-   * device/qcom/sepolicy/
-4eb59c7 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
-
-   * device/rr/sepolicy/
-d1e4ea4 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
-
-   * frameworks/base/
-
-   * lineage-sdk/
-
-   * packages/apps/DUI/
-
-   * packages/apps/LineageParts/
-
-   * packages/apps/ResurrectionOTA/
-
-   * packages/apps/Settings/
-
-   * packages/services/OmniJaws/
-
-====================
-     04-07-2018
-====================
-
-
-   * bootable/recovery/
-c1cb695e install: mkfs.f2fs: specify sector size for target image size
-19bf4a51 mkfs.f2fs: specify sector size for target image size
-
-   * external/f2fs-tools/
-58b90c3 Merge remote-tracking branch 'aosp/master' into HEAD
-
-====================
-     04-06-2018
-====================
-
-
-   * packages/apps/Gallery2/
-85a785190 Gallery2: explicitly include android-support-v7-recyclerview
-08dd2c9b8 Merge tag 'android-8.1.0_r15' of https://android.googlesource.com/platform/packages/apps/Gallery2 into HEAD
-
-   * packages/apps/Settings/
-26a14837c4 Update Note 4 (trltexx) maintainer (#940)
-
-   * packages/inputmethods/LatinIME/
-d71d8e357 LatinIME: support for incognito mode
-
-====================
-     04-05-2018
-====================
-
-   * android/
-4bd9275 manifest: android-8.1.0_r15 -> android-8.1.0_r20
-
-   * build/make/
-a70677542 Merge tag 'android-8.1.0_r20' of https://android.googlesource.com/platform/build into oreo
-
-   * external/f2fs-tools/
-20aec61 check_f2fs: fix build error in abfarm474
-85fe5ff f2fs-tools: use pointer and memory alloaction instead of defining "structure stat" in function stack
-
-   * frameworks/base/
-9a2e490b303 Merge tag 'android-8.1.0_r20' of https://android.googlesource.com/platform/frameworks/base into oreo
-
-   * packages/apps/Settings/
-53a5677fd4 Merge tag 'android-8.1.0_r20' of https://android.googlesource.com/platform/packages/apps/Settings into oreo
-
-   * packages/services/Telecomm/
-1826c950 Merge branch 'lineage-15.1' of git://github.com/LineageOS/android_packages_services_Telecomm into HEAD
-
-   * packages/services/Telephony/
-62f37d819 Merge branch 'lineage-15.1' of git://github.com/LineageOS/android_packages_services_Telephony into HEAD
-
-   * vendor/rr/
-6c15a7fc extract_utils: Use vdexExtractor for extracting oreo classes.dex
-2a00102a apn: Add APN for spusu MVNO
-645b44d1 Make Cyan[...] great again!
-ad4b69a1 envsetup: Update default path for SDCLANG 4.0
-77a61643 Always use my_installed_module_stem instead of my_built_module_stem
-cb0ff3ee Add support for using the secondary SDLLVM toolchain
-f663903a Rules to enable LTO for Adreno GFX driver.
-
-====================
-     04-04-2018
-====================
-
-
-   * external/f2fs-tools/
-e53184d libf2fs,mkfs.f2fs: add wanted_sector_size for wanted_total_sectors
-
-   * frameworks/av/
-833f38811 Merge tag 'android-8.1.0_r20' into lineage-15.1
-abef5ce69 Revert "libmedia: Fix null pointer crash in secure buffer allocation.."
-
-   * frameworks/opt/telephony/
-45f3a2d88 Merge tag 'android-8.1.0_r20' into lineage-15.1
-
-   * hardware/qcom/audio-caf/msm8996/
-14d7df089 Merge tag 'LA.UM.6.5.r1-06700-8x96.0' of caf into lineage-15.1-caf-8996
-
-   * hardware/qcom/camera/
-b7eb232 Merge tag 'android-8.1.0_r20' into lineage-15.1
-
-   * hardware/qcom/display-caf/msm8996/
-80f2baf0e Merge tag 'LA.UM.6.5.r1-06700-8x96.0' of caf into lineage-15.1-caf-8996
-
-   * hardware/qcom/media-caf/msm8996/
-020e52b50 Merge tag 'LA.UM.6.5.r1-06700-8x96.0' of caf into lineage-15.1-caf-8996
-
-   * packages/apps/CarrierConfig/
-57882fb Merge tag 'android-8.1.0_r20' into lineage-15.1
-
-   * packages/apps/CellBroadcastReceiver/
-b79b565 Merge tag 'android-8.1.0_r20' into lineage-15.1
-
-   * packages/apps/Email/
-65d474d0e Merge tag 'android-8.1.0_r20' into lineage-15.1
-
-   * packages/apps/Settings/
-d3d610f440 Settings: fix crash when settings QS sliders to 0
-
-   * packages/apps/UnifiedEmail/
-30e0ea470 Merge tag 'android-8.1.0_r20' into lineage-15.1
-
-   * packages/providers/TelephonyProvider/
-39b2041 Merge tag 'android-8.1.0_r20' into lineage-15.1
-
-   * packages/services/Telecomm/
-15cd9473 Merge tag 'android-8.1.0_r20' into lineage-15.1
-
-   * packages/services/Telephony/
-bab26216c Merge tag 'android-8.1.0_r20' into lineage-15.1
-
-   * system/bt/
-4d314af0 Merge tag 'android-8.1.0_r20' into lineage-15.1
-
-====================
-     04-03-2018
-====================
-
-
-   * external/f2fs-tools/
-2853ca0 check_f2fs: test wrong write(2) call
-
-   * packages/apps/Eleven/
-07b3e5c Eleven: fix card styles... 2 years later
-4859181 Eleven: update accent color to match new icon
-ade2849 Eleven: build with AAPT2
-181d4ed Eleven: default android animations for activities and fragments
-68476c5 Eleven: fix genres not updating for subsequent albums
 
